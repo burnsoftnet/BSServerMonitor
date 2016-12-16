@@ -1,0 +1,50 @@
+THE FOLLOWING INFORMATION IS WHAT WAS ADDED AND CHANGED SINCE VERSION 1.0 RELEASED IN SEPT. 2009.
+
+ - Added Status ID 4, which means Slow Repsonse.
+ - Changed Status ID 2 from "Changed/Warning" to "IP Changed"
+ - Altered Views to reflect Status changes above.
+ - Added table list_collectors_tempass, which will store the collectors Load list, when it is temporaliy transfered 
+	from the current to the primer during an outage.
+ - Adding comments to the code as it is accessed.
+ - Added view view_collector_list
+ - Modifed the Collector List window to pull data from the view_collector_list view instead of the list_collectors table.
+ - Changed the Update Status on the BSSM_PingManager from updating only after it calls the DoList sub to after the do 
+	list and if the collector is disabled.
+ - Ability to Change the assigned Collector from the Device View
+ - Add the abnility to add a collector
+ - Add the view called Device List - Warnings Only
+ - Added Event Logging to the Pinger for when a Server is up or Down.  If the Server was already up or already down, 
+	it will not repeat the event alert.
+ - Created and Application that uses NMAP to gather information such as Open Ports, and Trace details.  This information 
+	is then saved in the database.
+ - Added Daily statistic archiving of Pinf Results.  This will run once a day and Average out the Uptime of the Devices 
+	that were pinged for that day per device.
+ - Added the BSSM_NMAP Application to run with the BSSM Service.  This was designed to run once a Day to gather information.  
+	Run time can be configured to run in the app.config file ( BSSM.exe.config )  Currently designed to run the data 
+	collection at one time and process the data at another time, this is to givee enough time for the the 
+	process to collect all the information.
+ - Modified the pinger to write an event when the device is down and when it is back up.
+ - Modified the pinger to ping the trace results from the device if a device is down.  This will only work if the UseTrace
+	field in the device config is set to true.  Otherwise it will think that no data was collected for that device.
+ - Modified the BSSM_NMAP application to only gather data for the devices that have the UseTrace and UsePort fields marked 
+	ask 1 in the Database.
+ - Added the BSSM_ColHealth process that will check the health of the collectors, if one of the collectors is not responding
+	it will move the workload until the collector is back online.  It's work load will be marked in the list_collectors_tempass
+	table.
+ - Added the BSSM_ColHealth process to run with the BSSM Service, it will run at twice the interval of the ping process.  This
+	was done just to make sure there is an issue with the collector and not that it is running late or slow.
+ - Added The Ability to Take the load off the master server, buy clicking on a collector and have it move all devices from the master 
+	to the select collector.
+ - Added the Reports to allow you to print off the devices that are down, have warnings, disabled, deleted, and up and running.
+ - Added additional function in the view collectors windows to help manage the collectors
+ - Modified the View_DownOnly tag in the BSServerMonitor.exe.config , it acts more like a read only funtion that will allow the users
+	to only see the devices via the UI but they are unable to do anything else, all the other administrative functions are disabled.
+ - Changed the default timer for the Warnings and disabled views to run at startup instead of it being a manual process.
+ - Added additional error catching.
+ - Added the ability to mark a server as deleted from the addsvr command line tool - 12/11/2012
+ - Added the ability to search for a device and list the sid from the addsvr command line tool. - 12/11/2012
+ - While viewing a device details, you can hit the i key to display the server id number  - 12/11/2012
+ - Added a /cleandb switch to the dbmaint.exe, put in the amount of days,months and year that you wish to keep the data and it will delete anything older then that.
+ - Added the dbmaint.exe /cleandb to run everytime the regular db maintance runs
+ 
+ 

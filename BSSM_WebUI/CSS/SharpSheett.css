@@ -1,0 +1,28 @@
+﻿body {font: normal 82% sans-serif; background-image: url(blocksbg1.jpg); background-attachment: fixed;}
+h1 {margin: 0; margin-bottom: 5px; padding: 8px; color: #000066; background-image: url(laptop1.jpg);}
+
+#search {float: right; width: 280px; padding: 5px; text-align: right;}
+.button {border: outset; 2px #000066; background-color: #6699ff; color: #ffffff; font-weight: bold;}
+.text {background-color: #eeeeee;}
+
+#bread {margin-top: 10px; margin-bottom: 10px; padding: 5px; border: solid 1px #cccccc; border-bottom: solid 3px #cccccc; color: #ffffff; background-color: #6699ff;}
+#bread a {margin-left: 5px; margin-right: 5px; color: #ffffff; text-decoration: none; font-weight: bold;}
+#bread a:hover {text-decoration: underline;}
+
+#left {float: left; width: 18%; border: solid 1px #cccccc; margin-bottom: 15px; background-color: #ffffff;}
+#left ul {list-style: none; margin: 0; padding: 0;}
+#left li {margin: 1px; padding: 2px;}
+#left a {display: block; width: 94%; margin: 1px; padding: 2px; border: solid 1px #cccccc; color: #0000ff; font-weight: bold; text-decoration: none;}
+#left a:hover {border: solid 1px #0000ff; background-color: #6699ff; color: #ffffff;}
+
+#content {margin-left: 20%; padding: 0; border: solid 1px #cccccc; background-color: #ffffff;}
+#content h3 {margin: 0; padding: 5px; color: #000066; border-bottom: solid 2px #000066;}
+#content p {margin: 5px; color: #000066;}
+#content a {color: #0000ff; text-decoration: none;}
+#content a:hover {text-decoration: underline;}
+#content .point {margin: 3%; padding: 0px; border: solid 1px #ffcc00; background-color: #ffffcc;}
+#content .point h3 {margin: 0; padding: 1px; border-bottom: solid 3px #ffcc00; color: #ffffff; background-color: #ffcc66;}
+#content .code {margin: 3%; padding: 7px; border: solid 1px #cccccc; background-color: #eeeeee; font: normal 100% courier; color: #000000;}
+
+#footer {clear: both; margin-top: 15px; padding: 5px; border: solid 1px #cccccc; background-color: #ffffff;}
+#footer h5 {margin: 0; text-align: right; color: #0000aa;}

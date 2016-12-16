@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CA64B2E4-6C87-4D68-B295-12D446377619}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>BSSM_WebUI</RootNamespace>
+    <AssemblyName>BSSM_WebUI</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>BSSM_WebUI.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>BSSM_WebUI.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Controls\View_AllServers.ascx" />
+    <Content Include="Controls\View_DownServers.ascx" />
+    <Content Include="Controls\View_Servers_ErrorsOnly.ascx" />
+    <Content Include="Images\calendar.gif" />
+    <Content Include="Images\chart.gif" />
+    <Content Include="Images\close-window.gif" />
+    <Content Include="Images\close.gif" />
+    <Content Include="Images\comments.gif" />
+    <Content Include="Images\computer.gif" />
+    <Content Include="Images\computer.png" />
+    <Content Include="Images\csv.gif" />
+    <Content Include="Images\disabled.gif" />
+    <Content Include="Images\down.gif" />
+    <Content Include="Images\event_a_fail.gif" />
+    <Content Include="Images\event_a_success_sm.gif" />
+    <Content Include="Images\event_error_sm.gif" />
+    <Content Include="Images\event_info.gif" />
+    <Content Include="Images\event_info_sm.gif" />
+    <Content Include="Images\event_warning.gif" />
+    <Content Include="Images\event_warning_sm.gif" />
+    <Content Include="Images\exclamation.gif" />
+    <Content Include="Images\inspect.gif" />
+    <Content Include="Images\networkcard.png" />
+    <Content Include="Images\options.gif" />
+    <Content Include="Images\process.png" />
+    <Content Include="Images\refresh.gif" />
+    <Content Include="Images\rss.gif" />
+    <Content Include="Images\save.gif" />
+    <Content Include="Images\services.gif" />
+    <Content Include="Images\shutdown.gif" />
+    <Content Include="Images\spinner.gif" />
+    <Content Include="Images\up.gif" />
+    <Content Include="Images\warn.gif" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Code\BSDatabase.vb" />
+    <Compile Include="Controls\View_AllServers.ascx.designer.vb">
+      <DependentUpon>View_AllServers.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\View_AllServers.ascx.vb">
+      <DependentUpon>View_AllServers.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\View_Device_Details.ascx.vb">
+      <DependentUpon>View_Device_Details.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\View_DownServers.ascx.designer.vb">
+      <DependentUpon>View_DownServers.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\View_DownServers.ascx.vb">
+      <DependentUpon>View_DownServers.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\View_Servers_ErrorsOnly.ascx.designer.vb">
+      <DependentUpon>View_Servers_ErrorsOnly.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\View_Servers_ErrorsOnly.ascx.vb">
+      <DependentUpon>View_Servers_ErrorsOnly.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="downloads.aspx.vb">
+      <DependentUpon>downloads.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\bssm_default.Master.designer.vb">
+      <DependentUpon>bssm_default.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Master\bssm_default.Master.vb">
+      <DependentUpon>bssm_default.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="search.aspx.vb">
+      <DependentUpon>search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View_Device_Details.aspx.vb">
+      <DependentUpon>View_Device_Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View_Servers_All.aspx.designer.vb">
+      <DependentUpon>View_Servers_All.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View_Servers_All.aspx.vb">
+      <DependentUpon>View_Servers_All.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View_Servers_Down.aspx.designer.vb">
+      <DependentUpon>View_Servers_Down.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View_Servers_Down.aspx.vb">
+      <DependentUpon>View_Servers_Down.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View_Servers_With_Errors.aspx.designer.vb">
+      <DependentUpon>View_Servers_With_Errors.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View_Servers_With_Errors.aspx.vb">
+      <DependentUpon>View_Servers_With_Errors.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\Debug\BSSM_WebUI.Resources.resources" />
+    <EmbeddedResource Include="obj\Release\BSSM_WebUI.Resources.resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\BSTabControl.dll.refresh" />
+    <None Include="downloads\BSSM_CollectorInstaller.msi" />
+    <None Include="downloads\BSSM_UI_Installer_x86.msi" />
+    <None Include="downloads\BSSM_UI_Installer_x86_ReadOnly.msi" />
+    <None Include="Images\Thumbs.db" />
+    <Content Include="bin\BSSM_WebUI.dll" />
+    <Content Include="bin\BSSM_WebUI.pdb" />
+    <Content Include="bin\BSSM_WebUI.xml" />
+    <Content Include="bin\BSTabControl.dll" />
+    <Content Include="BS_TabControl\icon1.gif" />
+    <Content Include="BS_TabControl\tabcontrol.js" />
+    <Content Include="BS_TabControl\tab_home.gif" />
+    <Content Include="BS_TabControl\tab_mouse_left.gif" />
+    <Content Include="BS_TabControl\tab_mouse_mid.gif" />
+    <Content Include="BS_TabControl\tab_mouse_right.gif" />
+    <Content Include="BS_TabControl\tab_nothing.gif" />
+    <Content Include="BS_TabControl\tab_off_left.gif" />
+    <Content Include="BS_TabControl\tab_off_mid.gif" />
+    <Content Include="BS_TabControl\tab_off_right.gif" />
+    <Content Include="BS_TabControl\tab_on_left.gif" />
+    <Content Include="BS_TabControl\tab_on_mid.gif" />
+    <Content Include="BS_TabControl\tab_on_right.gif" />
+    <Content Include="Controls\View_Device_Details.ascx" />
+    <Content Include="CSS\BlueTableTemp.css" />
+    <Content Include="CSS\print.css" />
+    <Content Include="CSS\SharpSheett.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="downloads.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="obj\BSSM_WebUI.vbproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\BSSM_WebUI.dll" />
+    <Content Include="obj\Debug\BSSM_WebUI.pdb" />
+    <Content Include="obj\Debug\BSSM_WebUI.xml" />
+    <Content Include="obj\Debug\TempPE\My Project.Resources.Designer.vb.dll" />
+    <Content Include="obj\Release\TempPE\My Project.Resources.Designer.vb.dll" />
+    <Content Include="search.aspx" />
+    <Content Include="View_Device_Details.aspx" />
+    <Content Include="View_Servers_All.aspx" />
+    <Content Include="View_Servers_Down.aspx" />
+    <Content Include="View_Servers_With_Errors.aspx" />
+    <Content Include="Master\bssm_default.Master" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="obj\Debug\BSSM_WebUI.vbproj.GenerateResource.Cache" />
+    <None Include="obj\Release\BSSM_WebUI.vbproj.GenerateResource.Cache" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v8.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1147</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

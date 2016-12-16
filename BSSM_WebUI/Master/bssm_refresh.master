@@ -1,0 +1,91 @@
+<%@ Master Language="VB" CodeFile="bssm_refresh.master.vb" Inherits="Master_bssm_refresh" %>
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<META http-equiv="REFRESH" content=60 />
+<head id="Head1" runat="server">
+    <title>Open-Source Server Monitor by BurnSoft.Net</title>
+    <meta Name="description" Content="This site is a simple view only webui to see what devices are down in the BSSM database">
+    <meta Name="keywords" Content="ping, bssm, server monitor, BurnSoft">
+<style type="text/css">
+<!--
+body {font: normal 82% sans-serif; background-image: url(blocksbg1.jpg); background-attachment: fixed;}
+h1 {margin: 0; margin-bottom: 5px; padding: 8px; color: #000066; background-image: url(laptop1.jpg);}
+
+#search {float: right; width: 280px; padding: 5px; text-align: right;}
+.button {border: outset; 2px #000066; background-color: #6699ff; color: #ffffff; font-weight: bold;}
+.text {background-color: #eeeeee;}
+
+#bread {margin-top: 10px; margin-bottom: 10px; padding: 5px; border: solid 1px #cccccc; border-bottom: solid 3px #cccccc; color: #ffffff; background-color: #6699ff;}
+#bread a {margin-left: 5px; margin-right: 5px; color: #ffffff; text-decoration: none; font-weight: bold;}
+#bread a:hover {text-decoration: underline;}
+
+#left {float: left; width: 18%; border: solid 1px #cccccc; margin-bottom: 15px; background-color: #ffffff;}
+#left ul {list-style: none; margin: 0; padding: 0;}
+#left li {margin: 1px; padding: 2px;}
+#left a {display: block; width: 94%; margin: 1px; padding: 2px; border: solid 1px #cccccc; color: #0000ff; font-weight: bold; text-decoration: none;}
+#left a:hover {border: solid 1px #0000ff; background-color: #6699ff; color: #ffffff;}
+
+#content {margin-left: 20%; padding: 0; border: solid 1px #cccccc; background-color: #ffffff;}
+#content h3 {margin: 0; padding: 5px; color: #000066; border-bottom: solid 2px #000066;}
+#content p {margin: 5px; color: #000066;}
+#content a {color: #0000ff; text-decoration: none;}
+#content a:hover {text-decoration: underline;}
+#content .point {margin: 3%; padding: 0px; border: solid 1px #ffcc00; background-color: #ffffcc;}
+#content .point h3 {margin: 0; padding: 1px; border-bottom: solid 3px #ffcc00; color: #ffffff; background-color: #ffcc66;}
+#content .code {margin: 3%; padding: 7px; border: solid 1px #cccccc; background-color: #eeeeee; font: normal 100% courier; color: #000000;}
+
+#footer {clear: both; margin-top: 15px; padding: 5px; border: solid 1px #cccccc; background-color: #ffffff;}
+#footer h5 {margin: 0; text-align: right; color: #0000aa;}
+
+-->
+</style>
+    <link href="../CSS/print.css" rel="stylesheet" type="text/css"  media="print"/>
+</head>
+
+<body>
+    <form id="form1" runat="server">
+<table align=CENTER border=0 width="100%">
+    <tr>
+    <td align=LEFT><h1>
+        <img src="Images/windows_open_source_.jpg" style="width: 107px; height: 62px" />Server Monitor&nbsp;</h1></td>
+    <td align=CENTER Class="NoPrint"></td>
+    <td align=Right Class="NoPrint">    <asp:TextBox ID="txtSearch" runat="server" class="text"></asp:TextBox>
+    <asp:Button ID="btnSearch" runat="server" Text="Search" class="button"/>
+</td>
+    </tr>
+</table>
+<div id="bread" Class="NoPrint">
+<a href="Default.aspx">Home</a>&raquo;
+</div>
+
+<div id="left" Class="NoPrint">
+<ul>
+<li><a href="View_Servers_All.aspx">View All Devices</a></li>
+<li><a href="View_Servers_Down.aspx">View All Down Devices</a></li>
+<li><a href="View_Servers_With_Errors.aspx">View All Devices with Errors</a></li>
+<li><a href="downloads.aspx">Downloads</a></li>
+</ul>
+</div>
+
+<div id="content">
+
+    <div>
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+        </asp:contentplaceholder>
+    </div>
+
+</div>
+
+<div id="footer" Class="NoPrint">
+    <span style="font-size: 7pt">&nbsp;version <%=Version %> &nbsp;&nbsp;Created and Designed by </span><a href="http://www.burnsoft.net/Software_OpenSource.aspx?dir=BurnSoft_Server_Monitor" target="_Blank">
+        <span style="font-size: 7pt">BurnSoft</span></a><span style="font-size: 7pt"> 2009-2014</span>
+<h5><%= strDateTime%></h5>
+</div>
+<img src="images/pow_by_aspnet2.0a.gif"/>
+    </form>
+</body>
+
+</html>    

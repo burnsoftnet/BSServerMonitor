@@ -1,0 +1,56 @@
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Release\getdata.bat
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Release\tgetdata.bat
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Release\BSSM_NMAP.exe.config
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Release\BSSM_NMAP.exe
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSSM_NMAP\obj\Release\ResolveAssemblyReference.cache
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSSM_NMAP\obj\Release\BSSM_NMAP.Resources.resources
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSSM_NMAP\obj\Release\BSSM_NMAP.vbproj.GenerateResource.Cache
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSSM_NMAP\obj\Release\BSSM_NMAP.exe
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Debug\getdata.bat
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Debug\tgetdata.bat
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Debug\BSSM_NMAP.exe.config
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Debug\BSSM_NMAP.exe
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Debug\BSSM_NMAP.pdb
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSSM_NMAP\obj\Debug\ResolveAssemblyReference.cache
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSSM_NMAP\obj\Debug\BSSM_NMAP.Resources.resources
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSSM_NMAP\obj\Debug\BSSM_NMAP.vbproj.GenerateResource.Cache
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSSM_NMAP\obj\Debug\BSSM_NMAP.exe
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSSM_NMAP\obj\Debug\BSSM_NMAP.pdb
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Debug\getdata.bat
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Debug\tgetdata.bat
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Debug\BSSM_NMAP.exe.config
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Debug\BSSM_NMAP.exe
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Debug\BSSM_NMAP.pdb
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSSM_NMAP\obj\Debug\ResolveAssemblyReference.cache
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSSM_NMAP\obj\Debug\BSSM_NMAP.Resources.resources
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSSM_NMAP\obj\Debug\BSSM_NMAP.vbproj.GenerateResource.Cache
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSSM_NMAP\obj\Debug\BSSM_NMAP.exe
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSSM_NMAP\obj\Debug\BSSM_NMAP.pdb
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Release\getdata.bat
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Release\tgetdata.bat
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Release\BSSM_NMAP.exe.config
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Release\BSSM_NMAP.exe
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSSM_NMAP\obj\Release\ResolveAssemblyReference.cache
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSSM_NMAP\obj\Release\BSSM_NMAP.Resources.resources
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSSM_NMAP\obj\Release\BSSM_NMAP.vbproj.GenerateResource.Cache
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSSM_NMAP\obj\Release\BSSM_NMAP.exe
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\bin\Debug\getdata.bat
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\bin\Debug\tgetdata.bat
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\bin\Debug\BSSM_NMAP.exe.config
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\bin\Debug\BSSM_NMAP.exe
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\bin\Debug\BSSM_NMAP.pdb
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSSM_NMAP\obj\Debug\ResolveAssemblyReference.cache
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSSM_NMAP\obj\Debug\BSSM_NMAP.Resources.resources
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSSM_NMAP\obj\Debug\BSSM_NMAP.vbproj.GenerateResource.Cache
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSSM_NMAP\obj\Debug\BSSM_NMAP.exe
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSSM_NMAP\obj\Debug\BSSM_NMAP.pdb
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\bin\Debug\getdata.bat
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\bin\Debug\tgetdata.bat
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\bin\Debug\BSSM_NMAP.exe.config
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\bin\Debug\BSSM_NMAP.exe
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\bin\Debug\BSSM_NMAP.pdb
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSSM_NMAP\obj\Debug\ResolveAssemblyReference.cache
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSSM_NMAP\obj\Debug\BSSM_NMAP.Resources.resources
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSSM_NMAP\obj\Debug\BSSM_NMAP.vbproj.GenerateResource.Cache
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSSM_NMAP\obj\Debug\BSSM_NMAP.exe
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSSM_NMAP\obj\Debug\BSSM_NMAP.pdb

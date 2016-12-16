@@ -1,0 +1,44 @@
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Release\BSSM_ColHealth.exe.config
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Release\BSSM_ColHealth.exe
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSSM_ColHealth\obj\Release\ResolveAssemblyReference.cache
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSSM_ColHealth\obj\Release\BSSM_ColHealth.Resources.resources
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSSM_ColHealth\obj\Release\BSSM_ColHealth.vbproj.GenerateResource.Cache
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSSM_ColHealth\obj\Release\BSSM_ColHealth.exe
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Debug\BSSM_ColHealth.exe.config
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Debug\BSSM_ColHealth.exe
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Debug\BSSM_ColHealth.pdb
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSSM_ColHealth\obj\Debug\ResolveAssemblyReference.cache
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSSM_ColHealth\obj\Debug\BSSM_ColHealth.Resources.resources
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSSM_ColHealth\obj\Debug\BSSM_ColHealth.vbproj.GenerateResource.Cache
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSSM_ColHealth\obj\Debug\BSSM_ColHealth.exe
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSSM_ColHealth\obj\Debug\BSSM_ColHealth.pdb
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Debug\BSSM_ColHealth.exe.config
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Debug\BSSM_ColHealth.exe
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Debug\BSSM_ColHealth.pdb
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSSM_ColHealth\obj\Debug\ResolveAssemblyReference.cache
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSSM_ColHealth\obj\Debug\BSSM_ColHealth.Resources.resources
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSSM_ColHealth\obj\Debug\BSSM_ColHealth.vbproj.GenerateResource.Cache
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSSM_ColHealth\obj\Debug\BSSM_ColHealth.exe
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSSM_ColHealth\obj\Debug\BSSM_ColHealth.pdb
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Release\BSSM_ColHealth.exe.config
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Release\BSSM_ColHealth.exe
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSSM_ColHealth\obj\Release\ResolveAssemblyReference.cache
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSSM_ColHealth\obj\Release\BSSM_ColHealth.Resources.resources
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSSM_ColHealth\obj\Release\BSSM_ColHealth.vbproj.GenerateResource.Cache
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSSM_ColHealth\obj\Release\BSSM_ColHealth.exe
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\bin\Debug\BSSM_ColHealth.exe.config
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\bin\Debug\BSSM_ColHealth.exe
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\bin\Debug\BSSM_ColHealth.pdb
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSSM_ColHealth\obj\Debug\ResolveAssemblyReference.cache
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSSM_ColHealth\obj\Debug\BSSM_ColHealth.Resources.resources
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSSM_ColHealth\obj\Debug\BSSM_ColHealth.vbproj.GenerateResource.Cache
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSSM_ColHealth\obj\Debug\BSSM_ColHealth.exe
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSSM_ColHealth\obj\Debug\BSSM_ColHealth.pdb
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\bin\Debug\BSSM_ColHealth.exe.config
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\bin\Debug\BSSM_ColHealth.exe
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\bin\Debug\BSSM_ColHealth.pdb
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSSM_ColHealth\obj\Debug\ResolveAssemblyReference.cache
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSSM_ColHealth\obj\Debug\BSSM_ColHealth.Resources.resources
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSSM_ColHealth\obj\Debug\BSSM_ColHealth.vbproj.GenerateResource.Cache
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSSM_ColHealth\obj\Debug\BSSM_ColHealth.exe
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSSM_ColHealth\obj\Debug\BSSM_ColHealth.pdb

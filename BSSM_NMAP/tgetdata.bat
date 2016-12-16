@@ -1,0 +1,3 @@
+Set SERVERNAME=%2
+Set APPPATH=%1
+nmap.exe -PN -p22,23,25,80,3389 --traceroute %SERVERNAME% -oX %APPPATH%%SERVERNAME%.xml

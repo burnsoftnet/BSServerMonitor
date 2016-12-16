@@ -1,0 +1,142 @@
+# osx noise
+.DS_Store
+profile
+
+# xcode noise
+build/*
+*.mode1
+*.mode1v3
+*.mode2v3
+*.perspective
+*.perspectivev3
+*.pbxuser
+*.xcworkspace
+xcuserdata
+
+# svn & cvs
+.svn
+CVS
+BSServerMonitor/bin/Debug/bsaddsrv.exe
+BSServerMonitor/bin/Debug/bsaddsrv.exe.config
+BSServerMonitor/bin/Debug/bsaddsrv.pdb
+BSServerMonitor/bin/Debug/BSPortManager.exe
+BSServerMonitor/bin/Debug/BSPortManager.exe.config
+BSServerMonitor/bin/Debug/BSPortManager.pdb
+BSServerMonitor/bin/Debug/BSServerMonitor.exe
+BSServerMonitor/bin/Debug/BSServerMonitor.exe.config
+BSServerMonitor/bin/Debug/BSServerMonitor.pdb
+BSServerMonitor/bin/Debug/BSSM_ColHealth.exe
+BSServerMonitor/bin/Debug/BSSM_ColHealth.exe.config
+BSServerMonitor/bin/Debug/BSSM_ColHealth.pdb
+BSServerMonitor/bin/Debug/BSSM_NMAP.exe
+BSServerMonitor/bin/Debug/BSSM_NMAP.exe.config
+BSServerMonitor/bin/Debug/BSSM_NMAP.pdb
+BSServerMonitor/bin/Debug/BSSM_Pinger.exe
+BSServerMonitor/bin/Debug/BSSM_Pinger.exe.config
+BSServerMonitor/bin/Debug/BSSM_Pinger.pdb
+BSServerMonitor/bin/Debug/BSSM_PingManager.exe
+BSServerMonitor/bin/Debug/BSSM_PingManager.exe.config
+BSServerMonitor/bin/Debug/BSSM_PingManager.pdb
+BSServerMonitor/bin/Debug/bssm_PortScanner.exe
+BSServerMonitor/bin/Debug/bssm_PortScanner.exe.config
+BSServerMonitor/bin/Debug/bssm_PortScanner.pdb
+BSServerMonitor/bin/Debug/BSSM.exe
+BSServerMonitor/bin/Debug/BSSM.exe.config
+BSServerMonitor/bin/Debug/BSSM.pdb
+BSServerMonitor/bin/Debug/BSSMService.exe
+BSServerMonitor/bin/Debug/BSSMService.exe.config
+BSServerMonitor/bin/Debug/BSSMService.pdb
+BSServerMonitor/bin/Debug/BurnSoft.FileSystem.dll
+BSServerMonitor/bin/Debug/BurnSoft.Network.dll
+BSServerMonitor/bin/Debug/DataGridViewAutoFilter.dll
+BSServerMonitor/bin/Debug/dbmaint.exe
+BSServerMonitor/bin/Debug/dbmaint.exe.config
+BSServerMonitor/bin/Debug/dbmaint.pdb
+BSServerMonitor/bin/Debug/dbsetup.xml
+BSServerMonitor/bin/Debug/getdata.bat
+BSServerMonitor/bin/Debug/ins.bat
+BSServerMonitor/bin/Debug/InstallUtil.exe
+BSServerMonitor/bin/Debug/InstallUtilLib.dll
+BSServerMonitor/bin/Debug/logs/install.txt
+BSServerMonitor/bin/Debug/logs/Update_Notes.txt
+BSServerMonitor/bin/Debug/nmap/install.txt
+BSServerMonitor/bin/Debug/tgetdata.bat
+BSServerMonitor/bin/Debug/tools/psexec.exe
+BSServerMonitor/bin/Debug/tools/pskill.exe
+BSServerMonitor/bin/Debug/tools/pslist.exe
+BSServerMonitor/bin/Debug/tools/psservice.exe
+BSServerMonitor/bin/Debug/uins.bat
+BSSM_NMAP/obj/Debug/BSSM_NMAP.exe
+BSSM_NMAP/obj/Debug/BSSM_NMAP.pdb
+BSSM_NMAP/obj/Debug/BSSM_NMAP.Resources.resources
+BSSM_NMAP/obj/Debug/BSSM_NMAP.vbproj.FileListAbsolute.txt
+BSSM_NMAP/obj/Debug/BSSM_NMAP.vbproj.GenerateResource.Cache
+BSSM_NMAP/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+BSSM_NMAP/obj/Debug/TempPE/My Project.Resources.Designer.vb.dll
+BSSM_NMAP/obj/Release/BSSM_NMAP.exe
+BSSM_NMAP/obj/Release/BSSM_NMAP.Resources.resources
+BSSM_NMAP/obj/Release/BSSM_NMAP.vbproj.GenerateResource.Cache
+BSSM_NMAP/obj/Release/TempPE/My Project.Resources.Designer.vb.dll
+BSSM_Pinger/obj/BSSM_Pinger.vbproj.FileListAbsolute.txt
+BSSM_Pinger/obj/Debug/BSSM_Pinger.exe
+BSSM_Pinger/obj/Debug/BSSM_Pinger.pdb
+BSSM_Pinger/obj/Debug/BSSM_Pinger.Resources.resources
+BSSM_Pinger/obj/Debug/BSSM_Pinger.vbproj.FileListAbsolute.txt
+BSSM_Pinger/obj/Debug/BSSM_Pinger.vbproj.GenerateResource.Cache
+BSSM_Pinger/obj/Debug/BSSM_Pinger.vbprojResolveAssemblyReference.cache
+BSSM_Pinger/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+BSSM_Pinger/obj/Debug/ResolveAssemblyReference.cache
+BSSM_Pinger/obj/Debug/TempPE/My Project.Resources.Designer.vb.dll
+BSSM_Pinger/obj/Release/BSSM_Pinger.exe
+BSSM_Pinger/obj/Release/BSSM_Pinger.Resources.resources
+BSSM_Pinger/obj/Release/BSSM_Pinger.vbproj.GenerateResource.Cache
+BSSM_Pinger/obj/Release/ResolveAssemblyReference.cache
+BSSM_Pinger/obj/Release/TempPE/My Project.Resources.Designer.vb.dll
+BSSM_PingManager/obj/BSSM_PingManager.vbproj.FileListAbsolute.txt
+BSSM_PingManager/obj/Debug/BSSM_PingManager.exe
+BSSM_PingManager/obj/Debug/BSSM_PingManager.pdb
+BSSM_PingManager/obj/Debug/BSSM_PingManager.Resources.resources
+BSSM_PingManager/obj/Debug/BSSM_PingManager.vbproj.FileListAbsolute.txt
+BSSM_PingManager/obj/Debug/BSSM_PingManager.vbproj.GenerateResource.Cache
+BSSM_PingManager/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+BSSM_PingManager/obj/Debug/TempPE/My Project.Resources.Designer.vb.dll
+BSSM_PingManager/obj/Release/BSSM_PingManager.exe
+BSSM_PingManager/obj/Release/BSSM_PingManager.Resources.resources
+BSSM_PingManager/obj/Release/BSSM_PingManager.vbproj.GenerateResource.Cache
+BSSM_PingManager/obj/Release/TempPE/My Project.Resources.Designer.vb.dll
+bssm_PortScanner/obj/bssm_PortScanner.vbproj.FileListAbsolute.txt
+bssm_PortScanner/obj/Debug/bssm_PortScanner.exe
+bssm_PortScanner/obj/Debug/bssm_PortScanner.pdb
+bssm_PortScanner/obj/Debug/bssm_PortScanner.Resources.resources
+bssm_PortScanner/obj/Debug/bssm_PortScanner.vbproj.FileListAbsolute.txt
+bssm_PortScanner/obj/Debug/bssm_PortScanner.vbproj.GenerateResource.Cache
+bssm_PortScanner/obj/Debug/bssm_PortScanner.vbprojResolveAssemblyReference.cache
+bssm_PortScanner/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+bssm_PortScanner/obj/Debug/ResolveAssemblyReference.cache
+bssm_PortScanner/obj/Debug/TempPE/My Project.Resources.Designer.vb.dll
+bssm_PortScanner/obj/Release/bssm_PortScanner.exe
+bssm_PortScanner/obj/Release/bssm_PortScanner.Resources.resources
+bssm_PortScanner/obj/Release/bssm_PortScanner.vbproj.GenerateResource.Cache
+bssm_PortScanner/obj/Release/build.force
+bssm_PortScanner/obj/Release/ResolveAssemblyReference.cache
+bssm_PortScanner/obj/Release/TempPE/My Project.Resources.Designer.vb.dll
+BSSM_Setup/obj/Debug/BSSM_Setup.exe
+BSSM_Setup/obj/Debug/BSSM_Setup.frmMain.resources
+BSSM_Setup/obj/Debug/BSSM_Setup.pdb
+BSSM_Setup/obj/Debug/BSSM_Setup.Resources.resources
+BSSM_Setup/obj/Debug/BSSM_Setup.vbproj.FileListAbsolute.txt
+BSSM_Setup/obj/Debug/BSSM_Setup.vbproj.GenerateResource.Cache
+BSSM_Setup/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+BSSM_Setup/obj/Debug/ResolveAssemblyReference.cache
+BSSM_Setup/obj/Debug/TempPE/My Project.Resources.Designer.vb.dll
+BSSM_Setup/obj/Release/BSSM_Setup.exe
+BSSM_Setup/obj/Release/BSSM_Setup.frmMain.resources
+BSSM_Setup/obj/Release/BSSM_Setup.Resources.resources
+BSSM_Setup/obj/Release/BSSM_Setup.vbproj.GenerateResource.Cache
+BSSM_Setup/obj/Release/TempPE/My Project.Resources.Designer.vb.dll
+BSSM_Setup/obj/BSSM_Setup.vbproj.FileListAbsolute.txt
+BSSM_WebManager/obj/BSSM_WebManager.vbproj.FileListAbsolute.txt
+BSSM_WebUI/obj/BSSM_WebUI.vbproj.FileListAbsolute.txt
+BSSMService/obj/BSSMService.vbproj.FileListAbsolute.txt
+BurnSoft.Universal/obj/BurnSoft.Universal.vbproj.FileListAbsolute.txt
+dbmaint/obj/dbmaint.vbproj.FileListAbsolute.txt

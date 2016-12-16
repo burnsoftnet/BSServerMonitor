@@ -1,0 +1,149 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+BSSM_WebUI
+</name>
+</assembly>
+<members>
+<member name="F:BSSM_WebUI.View_Servers_Down.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:BSSM_WebUI.View_Servers_Down.View_DownServers1">
+	<summary>
+View_DownServers1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="T:BSSM_WebUI.View_Servers_Down">
+	<summary>
+View_Servers_Down class.
+</summary>
+	<remarks>
+Auto-generated class.
+</remarks>
+</member><member name="F:BSSM_WebUI.View_Servers_All.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:BSSM_WebUI.View_Servers_All.View_AllServers1">
+	<summary>
+View_AllServers1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="T:BSSM_WebUI.View_Servers_All">
+	<summary>
+View_Servers_All class.
+</summary>
+	<remarks>
+Auto-generated class.
+</remarks>
+</member><member name="F:BSSM_WebUI.View_Servers_With_Errors.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:BSSM_WebUI.View_Servers_With_Errors.View_Servers_ErrorsOnly1">
+	<summary>
+View_Servers_ErrorsOnly1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="T:BSSM_WebUI.View_Servers_With_Errors">
+	<summary>
+View_Servers_With_Errors class.
+</summary>
+	<remarks>
+Auto-generated class.
+</remarks>
+</member><member name="F:BSSM_WebUI.View_Servers_ErrorsOnly.GridView1">
+	<summary>
+GridView1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:BSSM_WebUI.View_Servers_ErrorsOnly.SqlDataSource1">
+	<summary>
+SqlDataSource1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="T:BSSM_WebUI.View_Servers_ErrorsOnly">
+	<summary>
+View_Servers_ErrorsOnly class.
+</summary>
+	<remarks>
+Auto-generated class.
+</remarks>
+</member><member name="F:BSSM_WebUI.View_AllServers.GridView1">
+	<summary>
+GridView1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:BSSM_WebUI.View_AllServers.SqlDataSource1">
+	<summary>
+SqlDataSource1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="T:BSSM_WebUI.View_AllServers">
+	<summary>
+View_AllServers class.
+</summary>
+	<remarks>
+Auto-generated class.
+</remarks>
+</member><member name="F:BSSM_WebUI.View_DownServers.GridView1">
+	<summary>
+GridView1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:BSSM_WebUI.View_DownServers.SqlDataSource1">
+	<summary>
+SqlDataSource1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="T:BSSM_WebUI.View_DownServers">
+	<summary>
+View_DownServers class.
+</summary>
+	<remarks>
+Auto-generated class.
+</remarks>
+</member>
+</members>
+</doc>

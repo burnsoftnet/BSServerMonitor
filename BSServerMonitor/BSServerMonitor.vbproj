@@ -1,0 +1,533 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{97F56A63-3A52-40EF-8F2A-77E4BB0113D8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>BSServerMonitor.My.MyApplication</StartupObject>
+    <RootNamespace>BSServerMonitor</RootNamespace>
+    <AssemblyName>BSServerMonitor</AssemblyName>
+    <MyType>WindowsForms</MyType>
+    <ApplicationIcon>Resources\02.ico</ApplicationIcon>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>None</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BurnSoft.FileSystem, Version=2.5.2342.6786, Culture=neutral, processorArchitecture=x86" />
+    <Reference Include="DataGridViewAutoFilter, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=5.2.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\WINDOWS\assembly\GAC_MSIL\MySql.Data\5.2.5.0__c5687fc88969c44d\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BSGlobalClass.vb" />
+    <Compile Include="bssmDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bssmDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="bssmDataSet.vb">
+      <DependentUpon>bssmDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frmAboutBox.Designer.vb">
+      <DependentUpon>frmAboutBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAboutBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddCollector.Designer.vb">
+      <DependentUpon>frmAddCollector.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddCollector.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddServer.Designer.vb">
+      <DependentUpon>frmAddServer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddServer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddServerType.Designer.vb">
+      <DependentUpon>frmAddServerType.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddServerType.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddToCollector.Designer.vb">
+      <DependentUpon>frmAddToCollector.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddToCollector.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditCollector.Designer.vb">
+      <DependentUpon>frmEditCollector.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditCollector.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMoveToCollector.Designer.vb">
+      <DependentUpon>frmMoveToCollector.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMoveToCollector.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReport_View_Monthly_Uptime.Designer.vb">
+      <DependentUpon>frmReport_View_Monthly_Uptime.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmReport_View_Monthly_Uptime.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSearch.Designer.vb">
+      <DependentUpon>frmSearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSearch_Results.Designer.vb">
+      <DependentUpon>frmSearch_Results.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSearch_Results.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSetup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSetup.Designer.vb">
+      <DependentUpon>frmSetup.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTransferLoad.Designer.vb">
+      <DependentUpon>frmTransferLoad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTransferLoad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmView_Collectors.Designer.vb">
+      <DependentUpon>frmView_Collectors.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmView_Collectors.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmView_PingDetails.Designer.vb">
+      <DependentUpon>frmView_PingDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmView_PingDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmView_Report_Device_Deleted_list.Designer.vb">
+      <DependentUpon>frmView_Report_Device_Deleted_list.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmView_Report_Device_Deleted_list.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmView_Report_Device_Disabled_List.Designer.vb">
+      <DependentUpon>frmView_Report_Device_Disabled_List.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmView_Report_Device_Disabled_List.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmView_Report_Device_Down_List.Designer.vb">
+      <DependentUpon>frmView_Report_Device_Down_List.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmView_Report_Device_Down_List.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmView_Report_Device_Errors_Down_List.Designer.vb">
+      <DependentUpon>frmView_Report_Device_Errors_Down_List.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmView_Report_Device_Errors_Down_List.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmView_Report_Device_List.Designer.vb">
+      <DependentUpon>frmView_Report_Device_List.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmView_Report_Device_List.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmView_Report_Device_UP_list.Designer.vb">
+      <DependentUpon>frmView_Report_Device_UP_list.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmView_Report_Device_UP_list.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmView_Servers_All.Designer.vb">
+      <DependentUpon>frmView_Servers_All.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmView_Servers_All.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmView_Servers_by_Collector.Designer.vb">
+      <DependentUpon>frmView_Servers_by_Collector.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmView_Servers_by_Collector.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmView_Servers_Disabled.Designer.vb">
+      <DependentUpon>frmView_Servers_Disabled.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmView_Servers_Disabled.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmView_Servers_DownOnly.Designer.vb">
+      <DependentUpon>frmView_Servers_DownOnly.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmView_Servers_DownOnly.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmView_Servers_ErrorsOnly.Designer.vb">
+      <DependentUpon>frmView_Servers_ErrorsOnly.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmView_Servers_ErrorsOnly.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmView_Server_Details.Designer.vb">
+      <DependentUpon>frmView_Server_Details.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmView_Server_Details.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GlobalVars.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="View_Types.Designer.vb">
+      <DependentUpon>View_Types.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View_Types.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmAboutBox.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmAboutBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReport_View_Monthly_Uptime.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmReport_View_Monthly_Uptime.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSearch.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmSearch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSearch_Results.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmSearch_Results.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTransferLoad.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmTransferLoad.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmView_Report_Device_UP_list.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmView_Report_Device_UP_list.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report_Device_Daily.rdlc" />
+    <EmbeddedResource Include="Report_Device_monthly.rdlc" />
+    <EmbeddedResource Include="Report_Device_UP_list.rdlc" />
+    <EmbeddedResource Include="frmAddCollector.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmAddCollector.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddServer.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmAddServer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddServerType.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmAddServerType.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddToCollector.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmAddToCollector.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditCollector.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmEditCollector.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMoveToCollector.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmMoveToCollector.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSetup.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmSetup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmView_Collectors.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmView_Collectors.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmView_PingDetails.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmView_PingDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmView_Report_Device_Deleted_list.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmView_Report_Device_Deleted_list.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmView_Report_Device_Disabled_List.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmView_Report_Device_Disabled_List.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmView_Report_Device_Down_List.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmView_Report_Device_Down_List.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmView_Report_Device_Errors_Down_List.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmView_Report_Device_Errors_Down_List.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmView_Report_Device_List.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmView_Report_Device_List.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmView_Servers_All.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmView_Servers_All.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmView_Servers_by_Collector.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmView_Servers_by_Collector.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmView_Servers_Disabled.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmView_Servers_Disabled.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmView_Servers_DownOnly.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmView_Servers_DownOnly.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmView_Servers_ErrorsOnly.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmView_Servers_ErrorsOnly.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmView_Server_Details.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmView_Server_Details.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report_Device_Deleted_list.rdlc" />
+    <EmbeddedResource Include="Report_Device_Disabled_List.rdlc" />
+    <EmbeddedResource Include="Report_Device_Down_List.rdlc" />
+    <EmbeddedResource Include="Report_Device_Errors_Down_List.rdlc" />
+    <EmbeddedResource Include="Report_Device_List.rdlc" />
+    <EmbeddedResource Include="Report_Device_yearly.rdlc" />
+    <EmbeddedResource Include="Report_Monthly_General.rdlc" />
+    <EmbeddedResource Include="View_Types.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>View_Types.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="02.ico" />
+    <Content Include="DataGridViewAutoFilter.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="dbsetup.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logs\install.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logs\Update_Notes.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="nmap\install.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\02.ico" />
+    <Content Include="BurnSoft.FileSystem.dll" />
+    <Content Include="tools\psexec.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tools\pskill.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tools\pslist.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tools\psservice.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\start.gif" />
+    <None Include="Resources\pause.gif" />
+    <None Include="Resources\pause.ico" />
+    <None Include="Resources\refresh.gif" />
+    <None Include="Resources\disabled.gif" />
+    <None Include="Resources\DELETE~1.gif" />
+    <None Include="Resources\Winxpicons_Disk_2_32x32.gif" />
+    <None Include="ins.bat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\ServerDetails_16_x_16.ico" />
+    <None Include="Resources\ServerDetails_32_x_32.ico" />
+    <None Include="Resources\network_16_x_16.ico" />
+    <None Include="Resources\network_32_x_32.ico" />
+    <None Include="Resources\network_55x55.gif" />
+    <None Include="Resources\hb_green.gif" />
+    <None Include="Resources\hb_red.gif" />
+    <None Include="Resources\hb_orange.gif" />
+    <None Include="app.config" />
+    <None Include="bssmDataSet.xsc">
+      <DependentUpon>bssmDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="bssmDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>bssmDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bssmDataSet.xss">
+      <DependentUpon>bssmDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\add_16_x_16.gif" />
+    <None Include="Resources\add_32_x_32.ico" />
+    <None Include="Resources\Search_16_x_16.ico" />
+    <None Include="Resources\rpm.jpg" />
+    <None Include="Resources\Notification%2520-%2520Shutdown%252016%2520n%2520p.gif" />
+    <None Include="Resources\icon_warning.gif" />
+    <None Include="Resources\icon_mail.gif" />
+    <None Include="Resources\icon_info.gif" />
+    <None Include="Resources\Export_Database.ico" />
+    <None Include="Resources\delete_16x16.ico" />
+    <None Include="Resources\Database.gif" />
+    <None Include="Resources\add_16_x_16.ico" />
+    <None Include="Resources\2.ico" />
+    <None Include="Resources\_1_32x32.ico" />
+    <None Include="Resources\Update.ico" />
+    <None Include="Resources\default.ico" />
+    <None Include="uins.bat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

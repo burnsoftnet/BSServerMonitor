@@ -1,0 +1,44 @@
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Release\bsaddsrv.exe.config
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Release\bsaddsrv.exe
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\bsaddsrv\obj\Release\ResolveAssemblyReference.cache
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\bsaddsrv\obj\Release\bsaddsrv.Resources.resources
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\bsaddsrv\obj\Release\bsaddsrv.vbproj.GenerateResource.Cache
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\bsaddsrv\obj\Release\bsaddsrv.exe
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Debug\bsaddsrv.exe.config
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Debug\bsaddsrv.exe
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Debug\bsaddsrv.pdb
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\bsaddsrv\obj\Debug\ResolveAssemblyReference.cache
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\bsaddsrv\obj\Debug\bsaddsrv.Resources.resources
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\bsaddsrv\obj\Debug\bsaddsrv.vbproj.GenerateResource.Cache
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\bsaddsrv\obj\Debug\bsaddsrv.exe
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\bsaddsrv\obj\Debug\bsaddsrv.pdb
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Debug\bsaddsrv.exe.config
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Debug\bsaddsrv.exe
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Debug\bsaddsrv.pdb
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\bsaddsrv\obj\Debug\ResolveAssemblyReference.cache
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\bsaddsrv\obj\Debug\bsaddsrv.Resources.resources
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\bsaddsrv\obj\Debug\bsaddsrv.vbproj.GenerateResource.Cache
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\bsaddsrv\obj\Debug\bsaddsrv.exe
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\bsaddsrv\obj\Debug\bsaddsrv.pdb
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\bsaddsrv\obj\Release\ResolveAssemblyReference.cache
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\bsaddsrv\obj\Release\bsaddsrv.Resources.resources
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\bsaddsrv\obj\Release\bsaddsrv.vbproj.GenerateResource.Cache
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Release\bsaddsrv.exe.config
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Release\bsaddsrv.exe
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\bsaddsrv\obj\Release\bsaddsrv.exe
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\bin\Debug\bsaddsrv.exe.config
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\bin\Debug\bsaddsrv.exe
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\bin\Debug\bsaddsrv.pdb
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\bsaddsrv\obj\Debug\ResolveAssemblyReference.cache
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\bsaddsrv\obj\Debug\bsaddsrv.Resources.resources
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\bsaddsrv\obj\Debug\bsaddsrv.vbproj.GenerateResource.Cache
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\bsaddsrv\obj\Debug\bsaddsrv.exe
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\bsaddsrv\obj\Debug\bsaddsrv.pdb
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\bin\Debug\bsaddsrv.exe.config
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\bin\Debug\bsaddsrv.exe
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\bin\Debug\bsaddsrv.pdb
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\bsaddsrv\obj\Debug\ResolveAssemblyReference.cache
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\bsaddsrv\obj\Debug\bsaddsrv.Resources.resources
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\bsaddsrv\obj\Debug\bsaddsrv.vbproj.GenerateResource.Cache
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\bsaddsrv\obj\Debug\bsaddsrv.exe
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\bsaddsrv\obj\Debug\bsaddsrv.pdb

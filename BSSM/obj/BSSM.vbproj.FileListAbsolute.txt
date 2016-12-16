@@ -1,0 +1,50 @@
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Release\BSSM.exe.config
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Release\BSSM.exe
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSSM\obj\Release\ResolveAssemblyReference.cache
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSSM\obj\Release\BSSM.frmMain.resources
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSSM\obj\Release\BSSM.Resources.resources
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSSM\obj\Release\BSSM.vbproj.GenerateResource.Cache
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSSM\obj\Release\BSSM.exe
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Debug\BSSM.exe.config
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Debug\BSSM.exe
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Debug\BSSM.pdb
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSSM\obj\Debug\ResolveAssemblyReference.cache
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSSM\obj\Debug\BSSM.frmMain.resources
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSSM\obj\Debug\BSSM.Resources.resources
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSSM\obj\Debug\BSSM.vbproj.GenerateResource.Cache
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSSM\obj\Debug\BSSM.exe
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSSM\obj\Debug\BSSM.pdb
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Debug\BSSM.exe.config
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Debug\BSSM.exe
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Debug\BSSM.pdb
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSSM\obj\Debug\ResolveAssemblyReference.cache
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSSM\obj\Debug\BSSM.frmMain.resources
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSSM\obj\Debug\BSSM.Resources.resources
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSSM\obj\Debug\BSSM.vbproj.GenerateResource.Cache
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSSM\obj\Debug\BSSM.exe
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSSM\obj\Debug\BSSM.pdb
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Release\BSSM.exe.config
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Release\BSSM.exe
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSSM\obj\Release\ResolveAssemblyReference.cache
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSSM\obj\Release\BSSM.frmMain.resources
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSSM\obj\Release\BSSM.Resources.resources
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSSM\obj\Release\BSSM.vbproj.GenerateResource.Cache
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSSM\obj\Release\BSSM.exe
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\bin\Debug\BSSM.exe.config
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\bin\Debug\BSSM.exe
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\bin\Debug\BSSM.pdb
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSSM\obj\Debug\ResolveAssemblyReference.cache
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSSM\obj\Debug\BSSM.frmMain.resources
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSSM\obj\Debug\BSSM.Resources.resources
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSSM\obj\Debug\BSSM.vbproj.GenerateResource.Cache
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSSM\obj\Debug\BSSM.exe
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSSM\obj\Debug\BSSM.pdb
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\bin\Debug\BSSM.exe.config
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\bin\Debug\BSSM.exe
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\bin\Debug\BSSM.pdb
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSSM\obj\Debug\ResolveAssemblyReference.cache
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSSM\obj\Debug\BSSM.frmMain.resources
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSSM\obj\Debug\BSSM.Resources.resources
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSSM\obj\Debug\BSSM.vbproj.GenerateResource.Cache
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSSM\obj\Debug\BSSM.exe
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSSM\obj\Debug\BSSM.pdb

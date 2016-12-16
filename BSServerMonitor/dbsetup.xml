@@ -1,0 +1,23 @@
+<Root>
+   <DB>
+      <SQL>CREATE TABLE `application_actions_port` (`ID` int(10) unsigned NOT NULL auto_increment,`AID` int(10) unsigned NOT NULL COMMENT 'Application ID',`PID` varchar(45) NOT NULL COMMENT 'Port ID',`Actions` text NOT NULL,PRIMARY KEY  (`ID`)) ENGINE=MyISAM DEFAULT CHARSET=latin1;</SQL>
+   </DB>
+   <DB>
+      <SQL>CREATE TABLE `application_actions_port` (`ID` int(10) unsigned NOT NULL auto_increment,`AID` int(10) unsigned NOT NULL COMMENT 'Application ID',`PID` varchar(45) NOT NULL COMMENT 'Port ID',`Actions` text NOT NULL,PRIMARY KEY  (`ID`)) ENGINE=MyISAM DEFAULT CHARSET=latin1;</SQL>
+   </DB>
+   <DB>
+      <SQL>CREATE TABLE `application_name` (`ID` int(10) unsigned NOT NULL auto_increment,`appname` varchar(255) NOT NULL,`appdesc` text NOT NULL,`Port` bigint(20) default '0',PRIMARY KEY  (`ID`)) ENGINE=MyISAM DEFAULT CHARSET=latin1;</SQL>
+   </DB>
+   <DB>
+      <SQL>CREATE TABLE `events_general` (`ID` int(10) NOT NULL auto_increment,`SID` int(10) default NULL,`DT` timestamp NOT NULL default CURRENT_TIMESTAMP,`shrtEv` varchar(255) default NULL,`lngEv` text,`Sev` varchar(10) default '1',`IsNew` varchar(10) default '1',PRIMARY KEY  (`ID`)) ENGINE=MyISAM AUTO_INCREMENT=134 DEFAULT CHARSET=latin1 ROW_FORMAT=DYNAMIC;</SQL>
+   </DB>
+   <DB>
+      <SQL>CREATE TABLE `events_general_archive` (`ID` int(10) NOT NULL default '0',`SID` int(10) default NULL,`DT` timestamp NOT NULL default '0000-00-00 00:00:00',`shrtEv` varchar(255) default NULL,`lngEv` text,`Sev` varchar(10) default '1',`IsNew` varchar(10) default '1') ENGINE=MyISAM DEFAULT CHARSET=latin1;</SQL>
+   </DB>
+   <DB>
+      <SQL>CREATE TABLE `list_collectors` (`ID` int(4) NOT NULL auto_increment,`ServerName` varchar(255) default NULL,`IsEnabled` int(4) default '1',`LUD` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,PRIMARY KEY  (`ID`),UNIQUE KEY `ID` (`ID`)) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1 ROW_FORMAT=DYNAMIC;</SQL>
+   </DB>
+   <DB>
+      <SQL/>
+   </DB>
+</Root>

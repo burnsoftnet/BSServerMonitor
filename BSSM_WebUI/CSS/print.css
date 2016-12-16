@@ -1,0 +1,92 @@
+BODY
+{
+    FONT-SIZE: 12pt;
+    BACKGROUND: white;
+    COLOR: black
+}
+.NoPrint
+{
+    DISPLAY: none
+}
+.DoPrint
+{
+    DISPLAY: inline
+}
+#menu
+{
+    DISPLAY: none
+}
+#wrapper
+{
+    BORDER-RIGHT: 0px;
+    PADDING-RIGHT: 0px;
+    BORDER-TOP: 0px;
+    PADDING-LEFT: 0px;
+    BACKGROUND: none transparent scroll repeat 0% 0%;
+    FLOAT: none! important;
+    PADDING-BOTTOM: 0px;
+    MARGIN: 0px 5%;
+    BORDER-LEFT: 0px;
+    WIDTH: auto;
+    COLOR: black;
+    PADDING-TOP: 0px;
+    BORDER-BOTTOM: 0px
+}
+#content
+{
+    BORDER-RIGHT: 0px;
+    PADDING-RIGHT: 0px;
+    BORDER-TOP: 0px;
+    PADDING-LEFT: 0px;
+    BACKGROUND: none transparent scroll repeat 0% 0%;
+    FLOAT: none! important;
+    PADDING-BOTTOM: 0px;
+    MARGIN: 0px 5%;
+    BORDER-LEFT: 0px;
+    WIDTH: auto;
+    COLOR: black;
+    PADDING-TOP: 0px;
+    BORDER-BOTTOM: 0px
+}
+DIV#content
+{
+    BORDER-TOP: #930 1px solid;
+    MARGIN-LEFT: 10%;
+    PADDING-TOP: 1em
+}
+DIV#mast
+{
+    MARGIN-BOTTOM: -8px
+}
+DIV#mast IMG
+{
+    VERTICAL-ALIGN: bottom
+}
+A:link
+{
+    FONT-WEIGHT: bold;
+    BACKGROUND: none transparent scroll repeat 0% 0%;
+    COLOR: #520;
+    TEXT-DECORATION: underline
+}
+A:visited
+{
+    FONT-WEIGHT: bold;
+    BACKGROUND: none transparent scroll repeat 0% 0%;
+    COLOR: #520;
+    TEXT-DECORATION: underline
+}
+#content A:link:unknown
+{
+    FONT-SIZE: 90%;
+    content: " (" attr(href) ") "
+}
+#content A:visited:unknown
+{
+    FONT-SIZE: 90%;
+    content: " (" attr(href) ") "
+}
+UNKNOWN
+{
+    content: " (http://www.alistapart.com" attr(href) ") "
+}

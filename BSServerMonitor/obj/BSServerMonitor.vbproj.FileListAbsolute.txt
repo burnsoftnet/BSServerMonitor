@@ -1,0 +1,354 @@
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Release\ins.bat
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Release\uins.bat
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Release\DataGridViewAutoFilter.dll
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Release\dbsetup.xml
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Release\logs\install.txt
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Release\nmap\install.txt
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Release\BSServerMonitor.exe.config
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Release\BSServerMonitor.exe
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Release\BurnSoft.FileSystem.dll
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\ResolveAssemblyReference.cache
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.Report_Device_Daily.rdlc
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.Report_Device_monthly.rdlc
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.Report_Device_UP_list.rdlc
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.Report_Device_Deleted_list.rdlc
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.Report_Device_Disabled_List.rdlc
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.Report_Device_Down_List.rdlc
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.Report_Device_Errors_Down_List.rdlc
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.Report_Device_List.rdlc
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.Report_Monthly_General.rdlc
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.frmAboutBox.resources
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.frmReport_View_Monthly_Uptime.resources
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.frmSearch.resources
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.frmSearch_Results.resources
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.frmTransferLoad.resources
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.frmView_Report_Device_UP_list.resources
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.frmAddCollector.resources
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.frmAddServer.resources
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.frmAddServerType.resources
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.frmAddToCollector.resources
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.frmEditCollector.resources
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.frmMain.resources
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.frmMoveToCollector.resources
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.frmSetup.resources
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.frmView_Collectors.resources
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.frmView_PingDetails.resources
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.frmView_Report_Device_Deleted_list.resources
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.frmView_Report_Device_Disabled_List.resources
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.frmView_Report_Device_Down_List.resources
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.frmView_Report_Device_Errors_Down_List.resources
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.frmView_Report_Device_List.resources
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.frmView_Servers_All.resources
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.frmView_Servers_by_Collector.resources
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.frmView_Servers_Disabled.resources
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.frmView_Servers_DownOnly.resources
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.frmView_Servers_ErrorsOnly.resources
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.frmView_Server_Details.resources
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.Resources.resources
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.View_Types.resources
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.vbproj.GenerateResource.Cache
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\RdlCompile.cache
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\RdlCompile.compiled
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.exe
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Release\tools\psexec.exe
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Release\tools\pskill.exe
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Release\tools\pslist.exe
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Release\tools\psservice.exe
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Release\logs\Update_Notes.txt
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Debug\logs\Update_Notes.txt
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Debug\ins.bat
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Debug\uins.bat
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Debug\DataGridViewAutoFilter.dll
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Debug\dbsetup.xml
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Debug\logs\install.txt
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Debug\nmap\install.txt
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Debug\tools\psexec.exe
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Debug\tools\pskill.exe
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Debug\tools\pslist.exe
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Debug\tools\psservice.exe
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Debug\BSServerMonitor.exe.config
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Debug\BSServerMonitor.exe
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Debug\BSServerMonitor.pdb
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Debug\BurnSoft.FileSystem.dll
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\ResolveAssemblyReference.cache
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.Report_Device_Daily.rdlc
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.Report_Device_monthly.rdlc
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.Report_Device_UP_list.rdlc
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.Report_Device_Deleted_list.rdlc
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.Report_Device_Disabled_List.rdlc
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.Report_Device_Down_List.rdlc
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.Report_Device_Errors_Down_List.rdlc
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.Report_Device_List.rdlc
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.Report_Monthly_General.rdlc
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmAboutBox.resources
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmReport_View_Monthly_Uptime.resources
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmSearch.resources
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmSearch_Results.resources
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmTransferLoad.resources
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmView_Report_Device_UP_list.resources
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmAddCollector.resources
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmAddServer.resources
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmAddServerType.resources
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmAddToCollector.resources
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmEditCollector.resources
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmMain.resources
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmMoveToCollector.resources
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmSetup.resources
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmView_Collectors.resources
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmView_PingDetails.resources
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmView_Report_Device_Deleted_list.resources
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmView_Report_Device_Disabled_List.resources
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmView_Report_Device_Down_List.resources
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmView_Report_Device_Errors_Down_List.resources
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmView_Report_Device_List.resources
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmView_Servers_All.resources
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmView_Servers_by_Collector.resources
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmView_Servers_Disabled.resources
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmView_Servers_DownOnly.resources
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmView_Servers_ErrorsOnly.resources
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmView_Server_Details.resources
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.Resources.resources
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.View_Types.resources
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.vbproj.GenerateResource.Cache
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\RdlCompile.cache
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\RdlCompile.compiled
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.exe
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.pdb
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Debug\BSServerMonitor.exe.config
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.exe
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.pdb
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Debug\logs\Update_Notes.txt
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Debug\ins.bat
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Debug\uins.bat
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Debug\DataGridViewAutoFilter.dll
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Debug\dbsetup.xml
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Debug\logs\install.txt
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Debug\nmap\install.txt
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Debug\tools\psexec.exe
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Debug\tools\pskill.exe
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Debug\tools\pslist.exe
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Debug\tools\psservice.exe
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Debug\BSServerMonitor.exe
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Debug\BSServerMonitor.pdb
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Debug\BurnSoft.FileSystem.dll
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\ResolveAssemblyReference.cache
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.Report_Device_Daily.rdlc
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.Report_Device_monthly.rdlc
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.Report_Device_UP_list.rdlc
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.Report_Device_Deleted_list.rdlc
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.Report_Device_Disabled_List.rdlc
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.Report_Device_Down_List.rdlc
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.Report_Device_Errors_Down_List.rdlc
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.Report_Device_List.rdlc
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.Report_Monthly_General.rdlc
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmAboutBox.resources
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmReport_View_Monthly_Uptime.resources
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmSearch.resources
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmSearch_Results.resources
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmTransferLoad.resources
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmView_Report_Device_UP_list.resources
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmAddCollector.resources
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmAddServer.resources
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmAddServerType.resources
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmAddToCollector.resources
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmEditCollector.resources
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmMain.resources
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmMoveToCollector.resources
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmSetup.resources
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmView_Collectors.resources
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmView_PingDetails.resources
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmView_Report_Device_Deleted_list.resources
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmView_Report_Device_Disabled_List.resources
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmView_Report_Device_Down_List.resources
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmView_Report_Device_Errors_Down_List.resources
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmView_Report_Device_List.resources
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmView_Servers_All.resources
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmView_Servers_by_Collector.resources
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmView_Servers_Disabled.resources
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmView_Servers_DownOnly.resources
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmView_Servers_ErrorsOnly.resources
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmView_Server_Details.resources
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.Resources.resources
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.View_Types.resources
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.vbproj.GenerateResource.Cache
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\RdlCompile.cache
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\RdlCompile.compiled
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.Report_Device_yearly.rdlc
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Release\logs\Update_Notes.txt
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Release\ins.bat
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Release\uins.bat
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Release\DataGridViewAutoFilter.dll
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Release\dbsetup.xml
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Release\logs\install.txt
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Release\nmap\install.txt
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Release\tools\psexec.exe
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Release\tools\pskill.exe
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Release\tools\pslist.exe
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Release\tools\psservice.exe
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Release\BSServerMonitor.exe.config
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Release\BSServerMonitor.exe
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Release\BurnSoft.FileSystem.dll
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\ResolveAssemblyReference.cache
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.Report_Device_Daily.rdlc
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.Report_Device_monthly.rdlc
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.Report_Device_UP_list.rdlc
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.Report_Device_Deleted_list.rdlc
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.Report_Device_Disabled_List.rdlc
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.Report_Device_Down_List.rdlc
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.Report_Device_Errors_Down_List.rdlc
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.Report_Device_List.rdlc
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.Report_Device_yearly.rdlc
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.Report_Monthly_General.rdlc
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.frmAboutBox.resources
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.frmReport_View_Monthly_Uptime.resources
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.frmSearch.resources
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.frmSearch_Results.resources
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.frmTransferLoad.resources
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.frmView_Report_Device_UP_list.resources
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.frmAddCollector.resources
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.frmAddServer.resources
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.frmAddServerType.resources
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.frmAddToCollector.resources
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.frmEditCollector.resources
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.frmMain.resources
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.frmMoveToCollector.resources
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.frmSetup.resources
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.frmView_Collectors.resources
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.frmView_PingDetails.resources
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.frmView_Report_Device_Deleted_list.resources
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.frmView_Report_Device_Disabled_List.resources
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.frmView_Report_Device_Down_List.resources
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.frmView_Report_Device_Errors_Down_List.resources
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.frmView_Report_Device_List.resources
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.frmView_Servers_All.resources
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.frmView_Servers_by_Collector.resources
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.frmView_Servers_Disabled.resources
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.frmView_Servers_DownOnly.resources
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.frmView_Servers_ErrorsOnly.resources
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.frmView_Server_Details.resources
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.Resources.resources
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.View_Types.resources
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.vbproj.GenerateResource.Cache
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\RdlCompile.cache
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\RdlCompile.compiled
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\obj\Release\BSServerMonitor.exe
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\bin\Debug\BSServerMonitor.exe.config
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.exe
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.pdb
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\bin\Debug\logs\Update_Notes.txt
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\bin\Debug\ins.bat
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\bin\Debug\uins.bat
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\bin\Debug\DataGridViewAutoFilter.dll
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\bin\Debug\dbsetup.xml
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\bin\Debug\logs\install.txt
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\bin\Debug\nmap\install.txt
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\bin\Debug\tools\psexec.exe
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\bin\Debug\tools\pskill.exe
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\bin\Debug\tools\pslist.exe
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\bin\Debug\tools\psservice.exe
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\bin\Debug\BSServerMonitor.exe
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\bin\Debug\BSServerMonitor.pdb
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\bin\Debug\BurnSoft.FileSystem.dll
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\ResolveAssemblyReference.cache
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.Report_Device_Daily.rdlc
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.Report_Device_monthly.rdlc
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.Report_Device_UP_list.rdlc
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.Report_Device_Deleted_list.rdlc
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.Report_Device_Disabled_List.rdlc
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.Report_Device_Down_List.rdlc
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.Report_Device_Errors_Down_List.rdlc
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.Report_Device_List.rdlc
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.Report_Device_yearly.rdlc
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.Report_Monthly_General.rdlc
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmAboutBox.resources
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmReport_View_Monthly_Uptime.resources
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmSearch.resources
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmSearch_Results.resources
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmTransferLoad.resources
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmView_Report_Device_UP_list.resources
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmAddCollector.resources
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmAddServer.resources
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmAddServerType.resources
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmAddToCollector.resources
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmEditCollector.resources
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmMain.resources
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmMoveToCollector.resources
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmSetup.resources
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmView_Collectors.resources
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmView_PingDetails.resources
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmView_Report_Device_Deleted_list.resources
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmView_Report_Device_Disabled_List.resources
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmView_Report_Device_Down_List.resources
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmView_Report_Device_Errors_Down_List.resources
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmView_Report_Device_List.resources
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmView_Servers_All.resources
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmView_Servers_by_Collector.resources
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmView_Servers_Disabled.resources
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmView_Servers_DownOnly.resources
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmView_Servers_ErrorsOnly.resources
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmView_Server_Details.resources
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.Resources.resources
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.View_Types.resources
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.vbproj.GenerateResource.Cache
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\RdlCompile.cache
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\RdlCompile.compiled
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\bin\Debug\logs\Update_Notes.txt
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\bin\Debug\ins.bat
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\bin\Debug\uins.bat
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\bin\Debug\DataGridViewAutoFilter.dll
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\bin\Debug\dbsetup.xml
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\bin\Debug\logs\install.txt
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\bin\Debug\nmap\install.txt
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\bin\Debug\tools\psexec.exe
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\bin\Debug\tools\pskill.exe
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\bin\Debug\tools\pslist.exe
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\bin\Debug\tools\psservice.exe
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\bin\Debug\BSServerMonitor.exe.config
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\bin\Debug\BSServerMonitor.exe
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\bin\Debug\BSServerMonitor.pdb
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\bin\Debug\BurnSoft.FileSystem.dll
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\ResolveAssemblyReference.cache
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.Report_Device_Daily.rdlc
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.Report_Device_monthly.rdlc
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.Report_Device_UP_list.rdlc
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.Report_Device_Deleted_list.rdlc
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.Report_Device_Disabled_List.rdlc
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.Report_Device_Down_List.rdlc
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.Report_Device_Errors_Down_List.rdlc
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.Report_Device_List.rdlc
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.Report_Device_yearly.rdlc
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.Report_Monthly_General.rdlc
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmAboutBox.resources
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmReport_View_Monthly_Uptime.resources
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmSearch.resources
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmSearch_Results.resources
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmTransferLoad.resources
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmView_Report_Device_UP_list.resources
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmAddCollector.resources
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmAddServer.resources
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmAddServerType.resources
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmAddToCollector.resources
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmEditCollector.resources
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmMain.resources
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmMoveToCollector.resources
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmSetup.resources
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmView_Collectors.resources
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmView_PingDetails.resources
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmView_Report_Device_Deleted_list.resources
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmView_Report_Device_Disabled_List.resources
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmView_Report_Device_Down_List.resources
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmView_Report_Device_Errors_Down_List.resources
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmView_Report_Device_List.resources
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmView_Servers_All.resources
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmView_Servers_by_Collector.resources
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmView_Servers_Disabled.resources
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmView_Servers_DownOnly.resources
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmView_Servers_ErrorsOnly.resources
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.frmView_Server_Details.resources
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.Resources.resources
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.View_Types.resources
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.vbproj.GenerateResource.Cache
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\RdlCompile.cache
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\RdlCompile.compiled
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.exe
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\obj\Debug\BSServerMonitor.pdb

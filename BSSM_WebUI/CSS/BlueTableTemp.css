@@ -1,0 +1,23 @@
+﻿body
+{
+    left: 0px;
+    width: 0px;
+    position: relative;
+    top: 0px;
+    height: 0px;
+    background-color: #ffffff;
+}
+H2
+{
+    font-weight: bold;
+    font-size: 2pc;
+    color: #ffffff;
+    font-family: Verdana,Hevletica,Arial;
+}
+H1
+{
+    font-weight: bold;
+    font-size: 13pt;
+    color: mediumblue;
+    font-family: Verdana,Hevletica,Arial;
+}

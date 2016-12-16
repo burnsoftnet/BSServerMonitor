@@ -1,0 +1,47 @@
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSPortManager\obj\Release\ResolveAssemblyReference.cache
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSPortManager\obj\Release\Interop.BSPortMon.dll
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSPortManager\obj\Release\BSPortManager.vbproj.ResolveComReference.cache
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSPortManager\obj\Release\BSPortManager.Resources.resources
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSPortManager\obj\Release\BSPortManager.vbproj.GenerateResource.Cache
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSPortManager\obj\Release\BSPortManager.exe
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Debug\BSPortManager.exe.config
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Debug\BSPortManager.exe
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSPortManager\obj\Debug\ResolveAssemblyReference.cache
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSPortManager\obj\Debug\Interop.BSPortMon.dll
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSPortManager\obj\Debug\BSPortManager.vbproj.ResolveComReference.cache
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSPortManager\obj\Debug\BSPortManager.Resources.resources
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSPortManager\obj\Debug\BSPortManager.vbproj.GenerateResource.Cache
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSPortManager\obj\Debug\BSPortManager.exe
+C:\Shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSPortManager\obj\Debug\BSPortManager.pdb
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSPortManager\obj\Debug\ResolveAssemblyReference.cache
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSPortManager\obj\Debug\BSPortManager.vbproj.ResolveComReference.cache
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSPortManager\obj\Debug\BSPortManager.Resources.resources
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSPortManager\obj\Debug\BSPortManager.vbproj.GenerateResource.Cache
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSPortManager\obj\Debug\BSPortManager.exe
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSPortManager\obj\Debug\BSPortManager.pdb
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Debug\BSPortManager.exe.config
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Debug\BSPortManager.exe
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Debug\BSPortManager.pdb
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Release\BSPortManager.exe.config
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSServerMonitor\bin\Release\BSPortManager.exe
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSPortManager\obj\Release\ResolveAssemblyReference.cache
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSPortManager\obj\Release\BSPortManager.vbproj.ResolveComReference.cache
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSPortManager\obj\Release\BSPortManager.Resources.resources
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSPortManager\obj\Release\BSPortManager.vbproj.GenerateResource.Cache
+E:\shares\My Documents\Visual Studio 2005\Projects\BSServerMonitor\BSPortManager\obj\Release\BSPortManager.exe
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\bin\Debug\BSPortManager.exe.config
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\bin\Debug\BSPortManager.exe
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\bin\Debug\BSPortManager.pdb
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSPortManager\obj\Debug\ResolveAssemblyReference.cache
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSPortManager\obj\Debug\BSPortManager.Resources.resources
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSPortManager\obj\Debug\BSPortManager.vbproj.GenerateResource.Cache
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSPortManager\obj\Debug\BSPortManager.exe
+\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSPortManager\obj\Debug\BSPortManager.pdb
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\bin\Debug\BSPortManager.exe.config
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\bin\Debug\BSPortManager.exe
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\bin\Debug\BSPortManager.pdb
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSPortManager\obj\Debug\ResolveAssemblyReference.cache
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSPortManager\obj\Debug\BSPortManager.Resources.resources
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSPortManager\obj\Debug\BSPortManager.vbproj.GenerateResource.Cache
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSPortManager\obj\Debug\BSPortManager.exe
+Y:\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSPortManager\obj\Debug\BSPortManager.pdb
