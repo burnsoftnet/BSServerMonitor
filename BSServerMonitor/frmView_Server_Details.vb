@@ -7,12 +7,11 @@ Public Class frmView_Server_Details
     Dim iTID As Long
     Public OK_TO_UPDATE As Boolean
     Public IsEditMode As Boolean
+    ''' <summary>
+    ''' 
+    ''' </summary>
     Public Sub LoadData()
         Try
-            'Me.Results_traceTableAdapter.FillBy_ServerID(Me.BssmDataSet.results_trace, SID)
-            'Me.List_servers_portsTableAdapter.FillBy_ServerID(Me.BssmDataSet.list_servers_ports, SID)
-            'Me.Events_generalTableAdapter.FillBy_ServerID(Me.BssmDataSet.events_general, SID)
-            'Me.View_ping_timepingstatsTableAdapter.FillBy_ServerID_Limited(Me.BssmDataSet.view_ping_timepingstats, SID, ToolStripTextBox1.Text)
             Me.Text = "Details for " & ServerName
             Dim SQL As String = "SELECT * from list_servers where ID=" & SID
             Dim Obj As New BSDatabase
@@ -76,6 +75,10 @@ Public Class frmView_Server_Details
         End Try
         OK_TO_UPDATE = True
     End Sub
+    ''' <summary>
+    ''' View only mode which disables the ability to edit or change any settings, mosty for when the console 
+    ''' is in read only mode.
+    ''' </summary>
     Public Sub CreateViewOnlyMode()
         If READ_ONLY Then
             ToolStripButton1.Enabled = False
@@ -89,6 +92,9 @@ Public Class frmView_Server_Details
             lblCollector.Enabled = False
         End If
     End Sub
+    ''' <summary>
+    ''' 
+    ''' </summary>
     Sub LoadDailyStats()
         Me.uptime_stats_dailyTableAdapter.FillBy_SID(Me.BssmDataSet.uptime_stats_daily, SID)
         Dim parmList As New Generic.List(Of ReportParameter)
@@ -96,6 +102,9 @@ Public Class frmView_Server_Details
         Me.ReportViewer1.LocalReport.SetParameters(parmList)
         Me.ReportViewer1.RefreshReport()
     End Sub
+    ''' <summary>
+    ''' 
+    ''' </summary>
     Sub LoadMOnthlyStats()
         Me.uptime_stats_monthlyTableAdapter.FillBy_SID(Me.BssmDataSet.uptime_stats_monthly, SID)
         Dim parmList As New Generic.List(Of ReportParameter)
@@ -103,6 +112,9 @@ Public Class frmView_Server_Details
         Me.ReportViewer2.LocalReport.SetParameters(parmList)
         Me.ReportViewer2.RefreshReport()
     End Sub
+    ''' <summary>
+    ''' 
+    ''' </summary>
     Sub LoadYearlyStats()
         Me.uptime_stats_yearlyTableAdapter.FillBy_SID(Me.BssmDataSet.uptime_stats_yearly, SID)
         Dim parmList As New Generic.List(Of ReportParameter)
@@ -110,13 +122,15 @@ Public Class frmView_Server_Details
         Me.ReportViewer3.LocalReport.SetParameters(parmList)
         Me.ReportViewer3.RefreshReport()
     End Sub
+    ''' <summary>
+    ''' 
+    ''' </summary>
     Private Sub frmView_Server_Details_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Try
             Me.List_servers_typesTableAdapter.Fill(Me.BssmDataSet.list_servers_types)
             ToolStripTextBox1.Text = VIEW_SERVERDETAILS_PING_LIMIT
             Call CreateViewOnlyMode()
             Call LoadData()
-            'Call LoadDailyStats()
         Catch ex As Exception
             Dim sMsg As String = ""
             Select Case Err.Number
@@ -131,12 +145,18 @@ Public Class frmView_Server_Details
             End Select
         End Try
     End Sub
+    ''' <summary>
+    ''' 
+    ''' </summary>
     Private Sub frmView_Server_Details_Resize(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Resize
         If Me.Width > 0 Then
             TabControl1.Width = Me.Width - 5
             TabControl1.Height = Me.Height - 60
         End If
     End Sub
+    ''' <summary>
+    ''' 
+    ''' </summary>
     Private Sub chkEnabled_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles chkEnabled.CheckedChanged
         If Not OK_TO_UPDATE Then Exit Sub
         Dim sCol As String = "IsEnabled"
@@ -146,33 +166,57 @@ Public Class frmView_Server_Details
             Call UpdateStatus(SID, 0, sCol)
         End If
     End Sub
+    ''' <summary>
+    ''' Checkbox for the Ping Options, if not selected it will mark it in the database and hide the tabs that relate to that function
+    ''' </summary>
     Private Sub chkPing_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles chkPing.CheckedChanged
         If Not OK_TO_UPDATE Then Exit Sub
         Dim sCol As String = "DoPing"
         If chkPing.Checked Then
             Call UpdateStatus(SID, 1, sCol)
+            TabControl1.TabPages.Add(TabPage2)
+            TabControl1.TabPages.Add(TabPage6)
+            TabControl1.TabPages.Add(TabPage7)
+            TabControl1.TabPages.Add(TabPage8)
         Else
             Call UpdateStatus(SID, 0, sCol)
+            TabControl1.TabPages.Remove(TabPage2)
+            TabControl1.TabPages.Remove(TabPage6)
+            TabControl1.TabPages.Remove(TabPage7)
+            TabControl1.TabPages.Remove(TabPage8)
         End If
     End Sub
+    ''' <summary>
+    ''' Checkbox for the Trace Options, if not selected it will mark it in the database and hide the tabs that relate to that function
+    ''' </summary>
     Private Sub chkTrace_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles chkTrace.CheckedChanged
         If Not OK_TO_UPDATE Then Exit Sub
         Dim sCol As String = "DoTrace"
         If chkTrace.Checked Then
             Call UpdateStatus(SID, 1, sCol)
+            TabControl1.TabPages.Add(TabPage5)
         Else
             Call UpdateStatus(SID, 0, sCol)
+            TabControl1.TabPages.Remove(TabPage5)
         End If
     End Sub
+    ''' <summary>
+    ''' Checkbox for the Ports Options, if not selected it will mark it in the database and hide the tabs that relate to that function
+    ''' </summary>
     Private Sub chkPort_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles chkPort.CheckedChanged
         If Not OK_TO_UPDATE Then Exit Sub
         Dim sCol As String = "DoPort"
         If chkPort.Checked Then
             Call UpdateStatus(SID, 1, sCol)
+            TabControl1.TabPages.Add(TabPage4)
         Else
             Call UpdateStatus(SID, 0, sCol)
+            TabControl1.TabPages.Remove(TabPage4)
         End If
     End Sub
+    ''' <summary>
+    ''' Checkbox for the HTTP Options, if not selected it will mark it in the database and hide the tabs that relate to that function
+    ''' </summary>
     Private Sub chkHTTP_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles chkHTTP.CheckedChanged
         If Not OK_TO_UPDATE Then Exit Sub
         Dim sCol As String = "DoHTTP"
@@ -182,6 +226,9 @@ Public Class frmView_Server_Details
             Call UpdateStatus(SID, 0, sCol)
         End If
     End Sub
+    ''' <summary>
+    ''' Sub to enable all the Text boxes in the Details Tab to be updated
+    ''' </summary>
     Sub StartEditMode()
         IsEditMode = True
         txtServerName.Enabled = True
@@ -195,6 +242,10 @@ Public Class frmView_Server_Details
         ComboBox1.SelectedValue = iTID
         txtType.Visible = False
     End Sub
+    ''' <summary>
+    ''' Sub to Disable the ability to edit the text boxes in the Details Tab
+    '''  Usually ran after a save or cancel of the editing.
+    ''' </summary>
     Sub EndEditMode()
         txtServerName.Enabled = False
         txtDisName.Enabled = False
@@ -207,6 +258,9 @@ Public Class frmView_Server_Details
         txtType.Visible = True
         IsEditMode = False
     End Sub
+    ''' <summary>
+    ''' Save changes from the recent edit
+    ''' </summary>
     Private Sub ToolStripButton2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ToolStripButton2.Click
         Try
             Dim Obj As New BSDatabase
@@ -222,9 +276,15 @@ Public Class frmView_Server_Details
             Call CatchError(sMsg, Me.Name & "." & "ToolStripButton2.Click")
         End Try
     End Sub
+    ''' <summary>
+    ''' Start Editing mode
+    ''' </summary>
     Private Sub ToolStripButton1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ToolStripButton1.Click
         Call StartEditMode()
     End Sub
+    ''' <summary>
+    ''' Delete the device from the database
+    ''' </summary>
     Private Sub ToolStripButton3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ToolStripButton3.Click
         Try
             Dim sMsg As String = MsgBox("Are you sure you wish to delete " & ServerName & "?", MsgBoxStyle.YesNo, Me.Text)
@@ -240,9 +300,15 @@ Public Class frmView_Server_Details
             Call CatchError(sMsg, Me.Name & "." & "ToolStripButton3.Click")
         End Try
     End Sub
+    ''' <summary>
+    ''' Close the Server Details View
+    ''' </summary>
     Private Sub ToolStripButton4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ToolStripButton4.Click
         Me.Close()
     End Sub
+    ''' <summary>
+    ''' 
+    ''' </summary>
     Private Sub DataGridView1_CellContentClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
         Dim TSID As Long = DataGridView1.SelectedRows.Item(0).Cells.Item(0).Value
         Dim frmNew As New frmView_PingDetails
@@ -250,6 +316,9 @@ Public Class frmView_Server_Details
         frmNew.MdiParent = Me.MdiParent
         frmNew.Show()
     End Sub
+    ''' <summary>
+    ''' 
+    ''' </summary>
     Private Sub chkIIPAC_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles chkIIPAC.CheckedChanged
         If Not OK_TO_UPDATE Then Exit Sub
         Dim sCol As String = "IIPAC"
@@ -259,19 +328,26 @@ Public Class frmView_Server_Details
             Call UpdateStatus(SID, 0, sCol)
         End If
     End Sub
-
+    ''' <summary>
+    ''' 
+    ''' </summary>
     Private Sub lblCollector_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lblCollector.Click
         frmAddToCollector.MdiParent = Me.MdiParent
         frmAddToCollector.SID = SID
         frmAddToCollector.Show()
         Me.Close()
     End Sub
-
+    ''' <summary>
+    ''' 
+    ''' </summary>
     Private Sub ToolStripButton5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ToolStripButton5.Click
         Me.Cursor = Cursors.WaitCursor
         Me.View_ping_timepingstatsTableAdapter.FillBy_ServerID_Limited(Me.BssmDataSet.view_ping_timepingstats, SID, ToolStripTextBox1.Text)
         Me.Cursor = Cursors.Default
     End Sub
+    ''' <summary>
+    ''' 
+    ''' </summary>
     Private Sub PingToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PingToolStripMenuItem.Click
         Try
             Dim ServerName As String = DataGridView4.SelectedRows.Item(0).Cells.Item(3).Value
@@ -285,21 +361,30 @@ Public Class frmView_Server_Details
             Call CatchError(sMsg, Me.Name & "." & "PingToolStripMenuItem_Click")
         End Try
     End Sub
+    ''' <summary>
+    ''' 
+    ''' </summary>
     Private Sub frmView_Server_Details_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles Me.KeyPress
         If Not IsEditMode Then If LCase(e.KeyChar) = "i" Then MsgBox("Server ID= " & SID)
     End Sub
-
+    ''' <summary>
+    ''' 
+    ''' </summary>
     Private Sub TabControl1_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles TabControl1.KeyDown
         Select Case (e.KeyValue)
             Case 27
                 Me.Close()
-                'If Not IsEditMode Then Call StartEditMode()
         End Select
     End Sub
-
+    ''' <summary>
+    ''' 
+    ''' </summary>
     Private Sub TabControl1_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles TabControl1.KeyPress
         If Not IsEditMode Then If LCase(e.KeyChar) = "i" Then MsgBox("Server ID= " & SID)
     End Sub
+    ''' <summary>
+    ''' 
+    ''' </summary>
     Private Sub TabControl1_Selected(ByVal sender As Object, ByVal e As System.Windows.Forms.TabControlEventArgs) Handles TabControl1.Selected
         Dim TabSelected As String = e.TabPage.Text
         Select Case TabSelected
@@ -338,7 +423,9 @@ Public Class frmView_Server_Details
                 Me.Cursor = Cursors.Default
         End Select
     End Sub
-
+    ''' <summary>
+    ''' 
+    ''' </summary>
     Private Sub DataGridView2_CellFormatting(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellFormattingEventArgs) Handles DataGridView2.CellFormatting
         If DataGridView2.Columns(e.ColumnIndex).Name = "SevDataGridViewTextBoxColumn" Then
             Select Case UCase(e.Value)
@@ -357,7 +444,9 @@ Public Class frmView_Server_Details
             End Select
         End If
     End Sub
-
+    ''' <summary>
+    ''' 
+    ''' </summary>
     Private Sub DataGridView1_CellFormatting(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellFormattingEventArgs) Handles DataGridView1.CellFormatting
         If DataGridView1.Columns(e.ColumnIndex).Name = "LsDataGridViewTextBoxColumn" Then
             Select Case UCase(Trim(e.Value))

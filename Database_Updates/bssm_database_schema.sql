@@ -3,313 +3,346 @@ SQLyog Enterprise - MySQL GUI v5.20
 Host - 5.1.30-community : Database - bssm
 *********************************************************************
 Server version : 5.1.30-community
-*/
+*/
+
 
 SET NAMES utf8;
 
 SET SQL_MODE='';
 
-create database if not exists `bssm`;
+CREATE DATABASE IF NOT EXISTS `bssm`;
 
+GRANT USAGE ON *.* TO 'bssm'@'%';
+DROP USER 'bssm'@'%';
 CREATE USER 'bssm'@'%';
 SET PASSWORD FOR 'bssm'@'%' = PASSWORD('bs.server.mon');
 GRANT ALL PRIVILEGES ON *.* TO 'bssm'@'%';
 GRANT ALL PRIVILEGES ON bssm.* TO 'bssm'@'%';
+FLUSH PRIVILEGES;
+
 
 USE `bssm`;
 
 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO';
 
+/*Table Structure for Database Version */
+DROP TABLE IF EXISTS `DB_Version`;
+
+CREATE TABLE `DB_Version` (
+  `ID` INT NOT NULL AUTO_INCREMENT,
+  `verNo` VARCHAR(45) NULL,
+  `dtUpdated` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`ID`),
+  UNIQUE INDEX `ID_UNIQUE` (`ID` ASC));
+
+INSERT INTO `DB_Version` (verNo) VALUES(1.5);
+
 /*Table structure for table `application_actions_port` */
 
 DROP TABLE IF EXISTS `application_actions_port`;
 
 CREATE TABLE `application_actions_port` (
-  `ID` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `AID` int(10) unsigned NOT NULL COMMENT 'Application ID',
-  `PID` varchar(45) NOT NULL COMMENT 'Port ID',
-  `Actions` text NOT NULL,
+  `ID` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `AID` INT(10) UNSIGNED NOT NULL COMMENT 'Application ID',
+  `PID` VARCHAR(45) NOT NULL COMMENT 'Port ID',
+  `Actions` TEXT NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MYISAM DEFAULT CHARSET=latin1;
 
 /*Table structure for table `application_name` */
 
 DROP TABLE IF EXISTS `application_name`;
 
 CREATE TABLE `application_name` (
-  `ID` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `appname` varchar(255) NOT NULL,
-  `appdesc` text NOT NULL,
-  `Port` bigint(20) DEFAULT '0',
+  `ID` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `appname` VARCHAR(255) NOT NULL,
+  `appdesc` TEXT NOT NULL,
+  `Port` BIGINT(20) DEFAULT '0',
   PRIMARY KEY (`ID`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MYISAM DEFAULT CHARSET=latin1;
 
 /*Table structure for table `events_general` */
 
 DROP TABLE IF EXISTS `events_general`;
 
 CREATE TABLE `events_general` (
-  `ID` int(10) NOT NULL AUTO_INCREMENT,
-  `SID` int(10) DEFAULT NULL,
-  `DT` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `shrtEv` varchar(255) DEFAULT NULL,
-  `lngEv` text,
-  `Sev` varchar(10) DEFAULT '1',
-  `IsNew` varchar(10) DEFAULT '1',
+  `ID` INT(10) NOT NULL AUTO_INCREMENT,
+  `SID` INT(10) DEFAULT NULL,
+  `DT` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `shrtEv` VARCHAR(255) DEFAULT NULL,
+  `lngEv` TEXT,
+  `Sev` VARCHAR(10) DEFAULT '1',
+  `IsNew` VARCHAR(10) DEFAULT '1',
   PRIMARY KEY (`ID`)
-) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 ROW_FORMAT=DYNAMIC;
+) ENGINE=MYISAM AUTO_INCREMENT=381082 DEFAULT CHARSET=latin1 ROW_FORMAT=DYNAMIC;
+
+/*Table structure for table `events_website` */
+
+DROP TABLE IF EXISTS `events_website`;
+
+CREATE TABLE `events_website` (
+  `ID` INT(11) NOT NULL AUTO_INCREMENT,
+  `SID` INT(11) DEFAULT NULL COMMENT '	',
+  `WID` INT(11) DEFAULT NULL,
+  `DT` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP,
+  `shrtEV` VARCHAR(255) DEFAULT NULL,
+  `lngEv` TEXT,
+  `Sev` VARCHAR(255) DEFAULT NULL,
+  `IsNew` INT(11) DEFAULT '1',
+  PRIMARY KEY (`ID`)
+) ENGINE=INNODB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 
 /*Table structure for table `list_collectors` */
 
 DROP TABLE IF EXISTS `list_collectors`;
 
 CREATE TABLE `list_collectors` (
-  `ID` int(4) NOT NULL AUTO_INCREMENT,
-  `ServerName` varchar(255) DEFAULT NULL,
-  `IsEnabled` int(4) DEFAULT '1',
-  `LUD` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  `IsBalanced` int(4) DEFAULT '1',
+  `ID` INT(4) NOT NULL AUTO_INCREMENT,
+  `ServerName` VARCHAR(255) DEFAULT NULL,
+  `IsEnabled` INT(4) DEFAULT '1',
+  `LUD` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `IsBalanced` INT(4) DEFAULT '1',
   PRIMARY KEY (`ID`),
   UNIQUE KEY `ID` (`ID`)
-) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 ROW_FORMAT=DYNAMIC;
+) ENGINE=MYISAM AUTO_INCREMENT=12 DEFAULT CHARSET=latin1 ROW_FORMAT=DYNAMIC;
 
 /*Table structure for table `list_collectors_tempass` */
 
 DROP TABLE IF EXISTS `list_collectors_tempass`;
 
 CREATE TABLE `list_collectors_tempass` (
-  `CID` int(11) DEFAULT NULL,
-  `SID` int(11) DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+  `CID` INT(11) DEFAULT NULL,
+  `SID` INT(11) DEFAULT NULL
+) ENGINE=MYISAM DEFAULT CHARSET=latin1;
 
 /*Table structure for table `list_servers` */
 
 DROP TABLE IF EXISTS `list_servers`;
 
 CREATE TABLE `list_servers` (
-  `ID` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `ServerName` varchar(45) NOT NULL,
-  `ServerIPAddress` varchar(255) NOT NULL,
-  `CS` int(10) unsigned NOT NULL DEFAULT '1' COMMENT 'Current Status',
-  `DisplayName` varchar(45) NOT NULL,
-  `IsEnabled` int(10) unsigned NOT NULL DEFAULT '1',
-  `DTAdded` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `CID` int(10) DEFAULT '0' COMMENT 'Collector ID, 0=All',
-  `DoPing` int(10) DEFAULT '1',
-  `DoTrace` int(10) DEFAULT '1',
-  `DoPort` int(10) DEFAULT '1',
-  `DoHTTP` int(10) DEFAULT '0',
-  `PingRepeats` int(10) DEFAULT '10',
-  `TID` int(10) unsigned NOT NULL DEFAULT '1',
-  `IsReported` int(10) unsigned NOT NULL DEFAULT '0',
-  `IIPAC` int(10) DEFAULT '0',
+  `ID` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `ServerName` VARCHAR(45) NOT NULL,
+  `ServerIPAddress` VARCHAR(255) NOT NULL,
+  `CS` INT(10) UNSIGNED NOT NULL DEFAULT '1' COMMENT 'Current Status',
+  `DisplayName` VARCHAR(45) NOT NULL,
+  `IsEnabled` INT(10) UNSIGNED NOT NULL DEFAULT '1',
+  `DTAdded` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `CID` INT(10) DEFAULT '0' COMMENT 'Collector ID, 0=All',
+  `DoPing` INT(10) DEFAULT '1',
+  `DoTrace` INT(10) DEFAULT '1',
+  `DoPort` INT(10) DEFAULT '1',
+  `DoHTTP` INT(10) DEFAULT '0',
+  `PingRepeats` INT(10) DEFAULT '10',
+  `TID` INT(10) UNSIGNED NOT NULL DEFAULT '1',
+  `IsReported` INT(10) UNSIGNED NOT NULL DEFAULT '0',
+  `IIPAC` INT(10) DEFAULT '0',
   PRIMARY KEY (`ID`)
-) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
+) ENGINE=MYISAM AUTO_INCREMENT=2688 DEFAULT CHARSET=latin1;
 
 /*Table structure for table `list_servers_ports` */
 
 DROP TABLE IF EXISTS `list_servers_ports`;
 
 CREATE TABLE `list_servers_ports` (
-  `ID` int(10) NOT NULL AUTO_INCREMENT,
-  `SID` int(10) DEFAULT '0' COMMENT 'Machine ID',
-  `Port` int(10) DEFAULT '0' COMMENT 'Port Number',
-  `protocol` varchar(255) DEFAULT 'tcp' COMMENT 'tcp/udp',
-  `IsEnabled` int(4) DEFAULT '0' COMMENT 'Monitoring Enabled',
-  `CS` int(4) DEFAULT '1' COMMENT 'Current Status',
-  `r_app_name` varchar(255) NOT NULL DEFAULT 'N/A',
+  `ID` INT(10) NOT NULL AUTO_INCREMENT,
+  `SID` INT(10) DEFAULT '0' COMMENT 'Machine ID',
+  `Port` INT(10) DEFAULT '0' COMMENT 'Port Number',
+  `protocol` VARCHAR(255) DEFAULT 'tcp' COMMENT 'tcp/udp',
+  `IsEnabled` INT(4) DEFAULT '0' COMMENT 'Monitoring Enabled',
+  `CS` INT(4) DEFAULT '1' COMMENT 'Current Status',
+  `r_app_name` VARCHAR(255) NOT NULL DEFAULT 'N/A',
   PRIMARY KEY (`ID`)
-) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 ROW_FORMAT=DYNAMIC;
+) ENGINE=MYISAM AUTO_INCREMENT=61179 DEFAULT CHARSET=latin1 ROW_FORMAT=DYNAMIC;
 
 /*Table structure for table `list_servers_types` */
 
 DROP TABLE IF EXISTS `list_servers_types`;
 
 CREATE TABLE `list_servers_types` (
-  `ID` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `Cat` varchar(255) NOT NULL,
-  `Desc` text NOT NULL,
+  `ID` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `Cat` VARCHAR(255) NOT NULL,
+  `Desc` TEXT NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
+) ENGINE=MYISAM AUTO_INCREMENT=14 DEFAULT CHARSET=latin1;
 
 /*Table structure for table `nq_ping_down` */
 
 DROP TABLE IF EXISTS `nq_ping_down`;
 
 CREATE TABLE `nq_ping_down` (
-  `ID` int(10) NOT NULL AUTO_INCREMENT,
-  `SID` int(10) DEFAULT NULL,
-  `WC` int(10) unsigned NOT NULL DEFAULT '1' COMMENT 'Warning Count',
+  `ID` INT(10) NOT NULL AUTO_INCREMENT,
+  `SID` INT(10) DEFAULT NULL,
+  `WC` INT(10) UNSIGNED NOT NULL DEFAULT '1' COMMENT 'Warning Count',
   PRIMARY KEY (`ID`)
-) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
+) ENGINE=MYISAM AUTO_INCREMENT=39537 DEFAULT CHARSET=latin1;
 
 /*Table structure for table `port_listings` */
 
 DROP TABLE IF EXISTS `port_listings`;
 
 CREATE TABLE `port_listings` (
-  `ID` int(11) NOT NULL AUTO_INCREMENT,
-  `port` int(11) DEFAULT NULL,
-  `protocol` varchar(50) DEFAULT 'tcp',
-  `AppName_C` varchar(255) DEFAULT '?',
-  `AppName_R` varchar(255) DEFAULT 'Unknown',
+  `ID` INT(11) NOT NULL AUTO_INCREMENT,
+  `port` INT(11) DEFAULT NULL,
+  `protocol` VARCHAR(50) DEFAULT 'tcp',
+  `AppName_C` VARCHAR(255) DEFAULT '?',
+  `AppName_R` VARCHAR(255) DEFAULT 'Unknown',
   PRIMARY KEY (`ID`)
-) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
+) ENGINE=MYISAM AUTO_INCREMENT=1394 DEFAULT CHARSET=latin1;
 
 /*Table structure for table `port_monitoring_details` */
 
 DROP TABLE IF EXISTS `port_monitoring_details`;
 
 CREATE TABLE `port_monitoring_details` (
-  `ID` int(11) NOT NULL,
-  `PID` int(11) DEFAULT NULL COMMENT 'Port ID from Port_listing',
-  `AppDesc` text COMMENT 'Description of the application',
-  `def_alert_msg` text COMMENT 'Default alert message for the events',
-  `std_monitor` int(10) DEFAULT '0' COMMENT 'Make This a Default for all devices.',
+  `ID` INT(11) NOT NULL,
+  `PID` INT(11) DEFAULT NULL COMMENT 'Port ID from Port_listing',
+  `AppDesc` TEXT COMMENT 'Description of the application',
+  `def_alert_msg` TEXT COMMENT 'Default alert message for the events',
+  `std_monitor` INT(10) DEFAULT '0' COMMENT 'Make This a Default for all devices.',
   PRIMARY KEY (`ID`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 ROW_FORMAT=DYNAMIC;
+) ENGINE=MYISAM DEFAULT CHARSET=latin1 ROW_FORMAT=DYNAMIC;
 
 /*Table structure for table `results_ping_raw` */
 
 DROP TABLE IF EXISTS `results_ping_raw`;
 
 CREATE TABLE `results_ping_raw` (
-  `ID` int(10) unsigned zerofill NOT NULL AUTO_INCREMENT,
-  `TSID` int(10) unsigned NOT NULL DEFAULT '0',
-  `SIP` varchar(255) NOT NULL,
-  `MyBytes` int(10) unsigned NOT NULL,
-  `MyTime` int(10) unsigned NOT NULL,
-  `MyTTL` int(10) unsigned NOT NULL,
+  `ID` INT(10) UNSIGNED ZEROFILL NOT NULL AUTO_INCREMENT,
+  `TSID` INT(10) UNSIGNED NOT NULL DEFAULT '0',
+  `SIP` VARCHAR(255) NOT NULL,
+  `MyBytes` INT(10) UNSIGNED NOT NULL,
+  `MyTime` INT(10) UNSIGNED NOT NULL,
+  `MyTTL` INT(10) UNSIGNED NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
+) ENGINE=MYISAM AUTO_INCREMENT=1700493968 DEFAULT CHARSET=latin1;
 
 /*Table structure for table `results_ping_stats` */
 
 DROP TABLE IF EXISTS `results_ping_stats`;
 
 CREATE TABLE `results_ping_stats` (
-  `ID` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `TSID` int(10) unsigned NOT NULL DEFAULT '0',
-  `Packets_Sent` int(10) unsigned NOT NULL,
-  `Packets_Rec` int(10) unsigned NOT NULL,
-  `Packets_Lost` int(10) unsigned NOT NULL,
-  `RoundTrip_Min` int(10) unsigned NOT NULL,
-  `RoundTrip_Max` int(10) unsigned NOT NULL,
-  `RoundTrip_Avg` int(10) unsigned NOT NULL,
-  `uptime` double NOT NULL,
+  `ID` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `TSID` INT(10) UNSIGNED NOT NULL DEFAULT '0',
+  `Packets_Sent` INT(10) UNSIGNED NOT NULL,
+  `Packets_Rec` INT(10) UNSIGNED NOT NULL,
+  `Packets_Lost` INT(10) UNSIGNED NOT NULL,
+  `RoundTrip_Min` INT(10) UNSIGNED NOT NULL,
+  `RoundTrip_Max` INT(10) UNSIGNED NOT NULL,
+  `RoundTrip_Avg` INT(10) UNSIGNED NOT NULL,
+  `uptime` DOUBLE NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
+) ENGINE=MYISAM AUTO_INCREMENT=170049721 DEFAULT CHARSET=latin1;
 
 /*Table structure for table `results_port_test` */
 
 DROP TABLE IF EXISTS `results_port_test`;
 
 CREATE TABLE `results_port_test` (
-  `ID` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `PID` int(10) unsigned NOT NULL,
-  `iSent` int(10) unsigned NOT NULL,
-  `iRec` int(10) unsigned NOT NULL,
-  `uptime` double NOT NULL,
-  `DTT` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  `CS` int(10) unsigned NOT NULL,
+  `ID` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `PID` INT(10) UNSIGNED NOT NULL,
+  `iSent` INT(10) UNSIGNED NOT NULL,
+  `iRec` INT(10) UNSIGNED NOT NULL,
+  `uptime` DOUBLE NOT NULL,
+  `DTT` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `CS` INT(10) UNSIGNED NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
+) ENGINE=MYISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 
 /*Table structure for table `results_timestamp` */
 
 DROP TABLE IF EXISTS `results_timestamp`;
 
 CREATE TABLE `results_timestamp` (
-  `ID` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `SID` int(10) unsigned NOT NULL,
-  `DTID` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `ls` int(10) unsigned NOT NULL DEFAULT '1',
+  `ID` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `SID` INT(10) UNSIGNED NOT NULL,
+  `DTID` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `ls` INT(10) UNSIGNED NOT NULL DEFAULT '1',
   PRIMARY KEY (`ID`)
-) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
+) ENGINE=MYISAM AUTO_INCREMENT=170027921 DEFAULT CHARSET=latin1;
 
 /*Table structure for table `results_trace` */
 
 DROP TABLE IF EXISTS `results_trace`;
 
 CREATE TABLE `results_trace` (
-  `ID` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `SID` int(10) unsigned NOT NULL,
-  `hopno` int(10) NOT NULL,
-  `ttl` int(10) DEFAULT NULL,
-  `rtt` int(10) DEFAULT NULL,
-  `ipaddr` varchar(255) DEFAULT NULL,
+  `ID` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `SID` INT(10) UNSIGNED NOT NULL,
+  `hopno` INT(10) NOT NULL,
+  `ttl` INT(10) DEFAULT NULL,
+  `rtt` INT(10) DEFAULT NULL,
+  `ipaddr` VARCHAR(255) DEFAULT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
+) ENGINE=MYISAM AUTO_INCREMENT=1023829 DEFAULT CHARSET=latin1;
 
 /*Table structure for table `self_lastrun` */
 
 DROP TABLE IF EXISTS `self_lastrun`;
 
 CREATE TABLE `self_lastrun` (
-  `LastRun` datetime DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+  `LastRun` DATETIME DEFAULT NULL
+) ENGINE=MYISAM DEFAULT CHARSET=latin1;
 
 /*Table structure for table `uptime_stats_daily` */
 
 DROP TABLE IF EXISTS `uptime_stats_daily`;
 
 CREATE TABLE `uptime_stats_daily` (
-  `ID` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `DT` datetime NOT NULL,
-  `SID` int(11) DEFAULT NULL,
-  `uptime` double NOT NULL DEFAULT '100',
+  `ID` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `DT` DATETIME NOT NULL,
+  `SID` INT(11) DEFAULT NULL,
+  `uptime` DOUBLE NOT NULL DEFAULT '100',
   PRIMARY KEY (`ID`)
-) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
+) ENGINE=MYISAM AUTO_INCREMENT=1438481 DEFAULT CHARSET=latin1;
 
 /*Table structure for table `uptime_stats_monthly` */
 
 DROP TABLE IF EXISTS `uptime_stats_monthly`;
 
 CREATE TABLE `uptime_stats_monthly` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `dt` datetime NOT NULL,
-  `uptime` double NOT NULL,
-  `SID` int(10) unsigned NOT NULL,
+  `id` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `dt` DATETIME NOT NULL,
+  `uptime` DOUBLE NOT NULL,
+  `SID` INT(10) UNSIGNED NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
+) ENGINE=MYISAM AUTO_INCREMENT=71220 DEFAULT CHARSET=latin1;
 
 /*Table structure for table `uptime_stats_monthly_general` */
 
 DROP TABLE IF EXISTS `uptime_stats_monthly_general`;
 
 CREATE TABLE `uptime_stats_monthly_general` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `dt_m` int(11) DEFAULT NULL,
-  `dt_y` int(11) DEFAULT NULL,
-  `t_uptime` double DEFAULT '0',
-  `dtins` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `id` INT(11) NOT NULL AUTO_INCREMENT,
+  `dt_m` INT(11) DEFAULT NULL,
+  `dt_y` INT(11) DEFAULT NULL,
+  `t_uptime` DOUBLE DEFAULT '0',
+  `dtins` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
+) ENGINE=MYISAM AUTO_INCREMENT=68 DEFAULT CHARSET=latin1;
 
 /*Table structure for table `uptime_stats_weekly` */
 
 DROP TABLE IF EXISTS `uptime_stats_weekly`;
 
 CREATE TABLE `uptime_stats_weekly` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `dt_start` datetime NOT NULL,
-  `dt_end` datetime NOT NULL,
-  `uptime` double NOT NULL,
+  `id` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `dt_start` DATETIME NOT NULL,
+  `dt_end` DATETIME NOT NULL,
+  `uptime` DOUBLE NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MYISAM DEFAULT CHARSET=latin1;
 
 /*Table structure for table `uptime_stats_yearly` */
 
 DROP TABLE IF EXISTS `uptime_stats_yearly`;
 
 CREATE TABLE `uptime_stats_yearly` (
-  `ID` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `myyear` int(10) unsigned DEFAULT NULL,
-  `uptime` double NOT NULL,
-  `SID` int(11) unsigned NOT NULL,
+  `ID` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `myyear` INT(10) UNSIGNED DEFAULT NULL,
+  `uptime` DOUBLE NOT NULL,
+  `SID` INT(11) UNSIGNED NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
+) ENGINE=MYISAM AUTO_INCREMENT=2965 DEFAULT CHARSET=latin1;
 
 /*Table structure for table `view_active_port_list` */
 
@@ -318,17 +351,17 @@ DROP TABLE IF EXISTS `view_active_port_list`;
 DROP VIEW IF EXISTS `view_active_port_list`;
 
 CREATE TABLE `view_active_port_list` (
-  `id` int(10) unsigned NOT NULL DEFAULT '0',
-  `ServerName` varchar(45) NOT NULL,
-  `ServerIPAddress` varchar(255) NOT NULL,
-  `DisplayName` varchar(45) NOT NULL,
-  `PortID` int(10) NOT NULL DEFAULT '0',
-  `port` int(10) DEFAULT NULL COMMENT 'Port Number',
-  `protocol` varchar(255) DEFAULT NULL COMMENT 'tcp/udp',
-  `isEnabled` int(4) DEFAULT NULL COMMENT 'Monitoring Enabled',
-  `CS` int(4) DEFAULT NULL COMMENT 'Current Status',
-  `r_app_name` varchar(255) NOT NULL DEFAULT ''
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `id` INT(10) UNSIGNED NOT NULL DEFAULT '0',
+  `ServerName` VARCHAR(45) NOT NULL,
+  `ServerIPAddress` VARCHAR(255) NOT NULL,
+  `DisplayName` VARCHAR(45) NOT NULL,
+  `PortID` INT(10) NOT NULL DEFAULT '0',
+  `port` INT(10) DEFAULT NULL COMMENT 'Port Number',
+  `protocol` VARCHAR(255) DEFAULT NULL COMMENT 'tcp/udp',
+  `isEnabled` INT(4) DEFAULT NULL COMMENT 'Monitoring Enabled',
+  `CS` INT(4) DEFAULT NULL COMMENT 'Current Status',
+  `r_app_name` VARCHAR(255) NOT NULL DEFAULT ''
+) ENGINE=INNODB DEFAULT CHARSET=latin1;
 
 /*Table structure for table `view_collector_list` */
 
@@ -337,14 +370,14 @@ DROP TABLE IF EXISTS `view_collector_list`;
 DROP VIEW IF EXISTS `view_collector_list`;
 
 CREATE TABLE `view_collector_list` (
-  `ID` int(4) NOT NULL DEFAULT '0',
-  `IsBalanced` int(4) DEFAULT '1',
-  `ServerName` varchar(255) DEFAULT NULL,
-  `Status` varchar(8) DEFAULT NULL,
-  `Balanced` varchar(3) DEFAULT NULL,
-  `LUD` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
-  `CL` bigint(21) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `ID` INT(4) NOT NULL DEFAULT '0',
+  `IsBalanced` INT(4) DEFAULT '1',
+  `ServerName` VARCHAR(255) DEFAULT NULL,
+  `Status` VARCHAR(8) DEFAULT NULL,
+  `Balanced` VARCHAR(3) DEFAULT NULL,
+  `LUD` TIMESTAMP NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `CL` BIGINT(21) DEFAULT NULL
+) ENGINE=INNODB DEFAULT CHARSET=latin1;
 
 /*Table structure for table `view_monthly_gen_friendlydates` */
 
@@ -353,14 +386,14 @@ DROP TABLE IF EXISTS `view_monthly_gen_friendlydates`;
 DROP VIEW IF EXISTS `view_monthly_gen_friendlydates`;
 
 CREATE TABLE `view_monthly_gen_friendlydates` (
-  `id` int(11) NOT NULL DEFAULT '0',
-  `dt_m` int(11) DEFAULT NULL,
-  `dt_y` int(11) DEFAULT NULL,
-  `t_uptime` double DEFAULT '0',
-  `dt` varchar(69) CHARACTER SET utf8 DEFAULT NULL,
-  `dtins` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
-  `t_downtime` decimal(3,3) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `id` INT(11) NOT NULL DEFAULT '0',
+  `dt_m` INT(11) DEFAULT NULL,
+  `dt_y` INT(11) DEFAULT NULL,
+  `t_uptime` DOUBLE DEFAULT '0',
+  `dt` VARCHAR(69) CHARACTER SET utf8 DEFAULT NULL,
+  `dtins` TIMESTAMP NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `t_downtime` DECIMAL(3,3) DEFAULT NULL
+) ENGINE=INNODB DEFAULT CHARSET=latin1;
 
 /*Table structure for table `view_ping_timepingstats` */
 
@@ -369,18 +402,18 @@ DROP TABLE IF EXISTS `view_ping_timepingstats`;
 DROP VIEW IF EXISTS `view_ping_timepingstats`;
 
 CREATE TABLE `view_ping_timepingstats` (
-  `ID` int(10) unsigned NOT NULL DEFAULT '0',
-  `SID` int(10) unsigned NOT NULL,
-  `DTID` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
-  `ls` int(10) unsigned NOT NULL DEFAULT '0',
-  `Packets_Sent` int(10) unsigned NOT NULL,
-  `Packets_Rec` int(10) unsigned NOT NULL,
-  `Packets_Lost` int(10) unsigned NOT NULL,
-  `RoundTrip_Min` int(10) unsigned NOT NULL,
-  `RoundTrip_Max` int(10) unsigned NOT NULL,
-  `RoundTrip_Avg` int(10) unsigned NOT NULL,
-  `uptime` double NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `ID` INT(10) UNSIGNED NOT NULL DEFAULT '0',
+  `SID` INT(10) UNSIGNED NOT NULL,
+  `DTID` TIMESTAMP NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `ls` INT(10) UNSIGNED NOT NULL DEFAULT '0',
+  `Packets_Sent` INT(10) UNSIGNED NOT NULL,
+  `Packets_Rec` INT(10) UNSIGNED NOT NULL,
+  `Packets_Lost` INT(10) UNSIGNED NOT NULL,
+  `RoundTrip_Min` INT(10) UNSIGNED NOT NULL,
+  `RoundTrip_Max` INT(10) UNSIGNED NOT NULL,
+  `RoundTrip_Avg` INT(10) UNSIGNED NOT NULL,
+  `uptime` DOUBLE NOT NULL
+) ENGINE=INNODB DEFAULT CHARSET=latin1;
 
 /*Table structure for table `view_port_to_server_appname` */
 
@@ -389,18 +422,18 @@ DROP TABLE IF EXISTS `view_port_to_server_appname`;
 DROP VIEW IF EXISTS `view_port_to_server_appname`;
 
 CREATE TABLE `view_port_to_server_appname` (
-  `ID` int(10) NOT NULL DEFAULT '0',
-  `SID` int(10) DEFAULT NULL COMMENT 'Machine ID',
-  `DisplayName` varchar(45) NOT NULL,
-  `Servername` varchar(45) NOT NULL,
-  `ServerIPAddress` varchar(255) NOT NULL,
-  `Port` int(10) DEFAULT NULL COMMENT 'Port Number',
-  `protocol` varchar(255) DEFAULT NULL COMMENT 'tcp/udp',
-  `AppName_C` varchar(255) DEFAULT NULL,
-  `AppName_R` varchar(255) DEFAULT NULL,
-  `IsEnabled` int(4) DEFAULT NULL COMMENT 'Monitoring Enabled',
-  `CS` int(4) DEFAULT NULL COMMENT 'Current Status'
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `ID` INT(10) NOT NULL DEFAULT '0',
+  `SID` INT(10) DEFAULT NULL COMMENT 'Machine ID',
+  `DisplayName` VARCHAR(45) NOT NULL,
+  `Servername` VARCHAR(45) NOT NULL,
+  `ServerIPAddress` VARCHAR(255) NOT NULL,
+  `Port` INT(10) DEFAULT NULL COMMENT 'Port Number',
+  `protocol` VARCHAR(255) DEFAULT NULL COMMENT 'tcp/udp',
+  `AppName_C` VARCHAR(255) DEFAULT NULL,
+  `AppName_R` VARCHAR(255) DEFAULT NULL,
+  `IsEnabled` INT(4) DEFAULT NULL COMMENT 'Monitoring Enabled',
+  `CS` INT(4) DEFAULT NULL COMMENT 'Current Status'
+) ENGINE=INNODB DEFAULT CHARSET=latin1;
 
 /*Table structure for table `view_servers_all` */
 
@@ -409,21 +442,21 @@ DROP TABLE IF EXISTS `view_servers_all`;
 DROP VIEW IF EXISTS `view_servers_all`;
 
 CREATE TABLE `view_servers_all` (
-  `ID` int(10) unsigned NOT NULL DEFAULT '0',
-  `ServerName` varchar(45) NOT NULL,
-  `ServerIPAddress` varchar(255) NOT NULL,
-  `CS` varchar(10) DEFAULT NULL,
-  `DisplayName` varchar(45) NOT NULL,
-  `IsEnabled` varchar(8) DEFAULT NULL,
-  `DTAdded` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
-  `DoPing` varchar(3) DEFAULT NULL,
-  `DoTrace` varchar(3) DEFAULT NULL,
-  `DoPort` varchar(3) DEFAULT NULL,
-  `DoHTTP` varchar(3) DEFAULT NULL,
-  `Cat` varchar(255) NOT NULL,
-  `CID` int(10) DEFAULT NULL COMMENT 'Collector ID, 0=All',
-  `PingRepeats` int(10) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `ID` INT(10) UNSIGNED NOT NULL DEFAULT '0',
+  `ServerName` VARCHAR(45) NOT NULL,
+  `ServerIPAddress` VARCHAR(255) NOT NULL,
+  `CS` VARCHAR(10) DEFAULT NULL,
+  `DisplayName` VARCHAR(45) NOT NULL,
+  `IsEnabled` VARCHAR(8) DEFAULT NULL,
+  `DTAdded` TIMESTAMP NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `DoPing` VARCHAR(3) DEFAULT NULL,
+  `DoTrace` VARCHAR(3) DEFAULT NULL,
+  `DoPort` VARCHAR(3) DEFAULT NULL,
+  `DoHTTP` VARCHAR(3) DEFAULT NULL,
+  `Cat` VARCHAR(255) NOT NULL,
+  `CID` INT(10) DEFAULT NULL COMMENT 'Collector ID, 0=All',
+  `PingRepeats` INT(10) DEFAULT NULL
+) ENGINE=INNODB DEFAULT CHARSET=latin1;
 
 /*Table structure for table `view_servers_disabled` */
 
@@ -432,20 +465,20 @@ DROP TABLE IF EXISTS `view_servers_disabled`;
 DROP VIEW IF EXISTS `view_servers_disabled`;
 
 CREATE TABLE `view_servers_disabled` (
-  `ID` int(10) unsigned NOT NULL DEFAULT '0',
-  `ServerName` varchar(45) NOT NULL,
-  `ServerIPAddress` varchar(255) NOT NULL,
-  `CS` int(10) unsigned NOT NULL DEFAULT '0' COMMENT 'Current Status',
-  `DisplayName` varchar(45) NOT NULL,
-  `IsEnabled` int(10) unsigned NOT NULL DEFAULT '0',
-  `DTAdded` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
-  `CID` int(10) DEFAULT NULL COMMENT 'Collector ID, 0=All',
-  `DoPing` int(10) DEFAULT NULL,
-  `DoTrace` int(10) DEFAULT NULL,
-  `DoPort` int(10) DEFAULT NULL,
-  `DoHTTP` int(10) DEFAULT NULL,
-  `Cat` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `ID` INT(10) UNSIGNED NOT NULL DEFAULT '0',
+  `ServerName` VARCHAR(45) NOT NULL,
+  `ServerIPAddress` VARCHAR(255) NOT NULL,
+  `CS` INT(10) UNSIGNED NOT NULL DEFAULT '0' COMMENT 'Current Status',
+  `DisplayName` VARCHAR(45) NOT NULL,
+  `IsEnabled` INT(10) UNSIGNED NOT NULL DEFAULT '0',
+  `DTAdded` TIMESTAMP NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `CID` INT(10) DEFAULT NULL COMMENT 'Collector ID, 0=All',
+  `DoPing` INT(10) DEFAULT NULL,
+  `DoTrace` INT(10) DEFAULT NULL,
+  `DoPort` INT(10) DEFAULT NULL,
+  `DoHTTP` INT(10) DEFAULT NULL,
+  `Cat` VARCHAR(255) NOT NULL
+) ENGINE=INNODB DEFAULT CHARSET=latin1;
 
 /*Table structure for table `view_servers_downonly` */
 
@@ -454,20 +487,20 @@ DROP TABLE IF EXISTS `view_servers_downonly`;
 DROP VIEW IF EXISTS `view_servers_downonly`;
 
 CREATE TABLE `view_servers_downonly` (
-  `ID` int(10) unsigned NOT NULL DEFAULT '0',
-  `ServerName` varchar(45) NOT NULL,
-  `ServerIPAddress` varchar(255) NOT NULL,
-  `CS` int(10) unsigned NOT NULL DEFAULT '0' COMMENT 'Current Status',
-  `DisplayName` varchar(45) NOT NULL,
-  `IsEnabled` int(10) unsigned NOT NULL DEFAULT '0',
-  `DTAdded` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
-  `CID` int(10) DEFAULT NULL COMMENT 'Collector ID, 0=All',
-  `DoPing` int(10) DEFAULT NULL,
-  `DoTrace` int(10) DEFAULT NULL,
-  `DoPort` int(10) DEFAULT NULL,
-  `DoHTTP` int(10) DEFAULT NULL,
-  `Cat` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `ID` INT(10) UNSIGNED NOT NULL DEFAULT '0',
+  `ServerName` VARCHAR(45) NOT NULL,
+  `ServerIPAddress` VARCHAR(255) NOT NULL,
+  `CS` INT(10) UNSIGNED NOT NULL DEFAULT '0' COMMENT 'Current Status',
+  `DisplayName` VARCHAR(45) NOT NULL,
+  `IsEnabled` INT(10) UNSIGNED NOT NULL DEFAULT '0',
+  `DTAdded` TIMESTAMP NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `CID` INT(10) DEFAULT NULL COMMENT 'Collector ID, 0=All',
+  `DoPing` INT(10) DEFAULT NULL,
+  `DoTrace` INT(10) DEFAULT NULL,
+  `DoPort` INT(10) DEFAULT NULL,
+  `DoHTTP` INT(10) DEFAULT NULL,
+  `Cat` VARCHAR(255) NOT NULL
+) ENGINE=INNODB DEFAULT CHARSET=latin1;
 
 /*Table structure for table `view_servers_errorsonly` */
 
@@ -476,20 +509,20 @@ DROP TABLE IF EXISTS `view_servers_errorsonly`;
 DROP VIEW IF EXISTS `view_servers_errorsonly`;
 
 CREATE TABLE `view_servers_errorsonly` (
-  `ID` int(10) unsigned NOT NULL DEFAULT '0',
-  `ServerName` varchar(45) NOT NULL,
-  `ServerIPAddress` varchar(255) NOT NULL,
-  `CS` varchar(10) DEFAULT NULL,
-  `DisplayName` varchar(45) NOT NULL,
-  `IsEnabled` varchar(8) DEFAULT NULL,
-  `DTAdded` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
-  `CID` int(10) DEFAULT NULL COMMENT 'Collector ID, 0=All',
-  `DoPing` int(10) DEFAULT NULL,
-  `DoTrace` int(10) DEFAULT NULL,
-  `DoPort` int(10) DEFAULT NULL,
-  `DoHTTP` int(10) DEFAULT NULL,
-  `Cat` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `ID` INT(10) UNSIGNED NOT NULL DEFAULT '0',
+  `ServerName` VARCHAR(45) NOT NULL,
+  `ServerIPAddress` VARCHAR(255) NOT NULL,
+  `CS` VARCHAR(17) DEFAULT NULL,
+  `DisplayName` VARCHAR(45) NOT NULL,
+  `IsEnabled` VARCHAR(8) DEFAULT NULL,
+  `DTAdded` TIMESTAMP NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `CID` INT(10) DEFAULT NULL COMMENT 'Collector ID, 0=All',
+  `DoPing` INT(10) DEFAULT NULL,
+  `DoTrace` INT(10) DEFAULT NULL,
+  `DoPort` INT(10) DEFAULT NULL,
+  `DoHTTP` INT(10) DEFAULT NULL,
+  `Cat` VARCHAR(255) NOT NULL
+) ENGINE=INNODB DEFAULT CHARSET=latin1;
 
 /*Table structure for table `view_servers_uponly` */
 
@@ -498,20 +531,52 @@ DROP TABLE IF EXISTS `view_servers_uponly`;
 DROP VIEW IF EXISTS `view_servers_uponly`;
 
 CREATE TABLE `view_servers_uponly` (
-  `ID` int(10) unsigned NOT NULL DEFAULT '0',
-  `ServerName` varchar(45) NOT NULL,
-  `ServerIPAddress` varchar(255) NOT NULL,
-  `CS` int(10) unsigned NOT NULL DEFAULT '0' COMMENT 'Current Status',
-  `DisplayName` varchar(45) NOT NULL,
-  `IsEnabled` int(10) unsigned NOT NULL DEFAULT '0',
-  `DTAdded` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
-  `CID` int(10) DEFAULT NULL COMMENT 'Collector ID, 0=All',
-  `DoPing` int(10) DEFAULT NULL,
-  `DoTrace` int(10) DEFAULT NULL,
-  `DoPort` int(10) DEFAULT NULL,
-  `DoHTTP` int(10) DEFAULT NULL,
-  `Cat` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `ID` INT(10) UNSIGNED NOT NULL DEFAULT '0',
+  `ServerName` VARCHAR(45) NOT NULL,
+  `ServerIPAddress` VARCHAR(255) NOT NULL,
+  `CS` INT(10) UNSIGNED NOT NULL DEFAULT '0' COMMENT 'Current Status',
+  `DisplayName` VARCHAR(45) NOT NULL,
+  `IsEnabled` INT(10) UNSIGNED NOT NULL DEFAULT '0',
+  `DTAdded` TIMESTAMP NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `CID` INT(10) DEFAULT NULL COMMENT 'Collector ID, 0=All',
+  `DoPing` INT(10) DEFAULT NULL,
+  `DoTrace` INT(10) DEFAULT NULL,
+  `DoPort` INT(10) DEFAULT NULL,
+  `DoHTTP` INT(10) DEFAULT NULL,
+  `Cat` VARCHAR(255) NOT NULL
+) ENGINE=INNODB DEFAULT CHARSET=latin1;
+
+/*Table structure for table `view_website_list_all` */
+
+DROP TABLE IF EXISTS `view_website_list_all`;
+
+DROP VIEW IF EXISTS `view_website_list_all`;
+
+CREATE TABLE `view_website_list_all` (
+  `DisplayName` VARCHAR(45) NOT NULL,
+  `DeviceStatus` INT(10) UNSIGNED NOT NULL DEFAULT '0' COMMENT 'Current Status',
+  `CID` INT(10) DEFAULT NULL COMMENT 'Collector ID, 0=All',
+  `DeviceEnabled` INT(10) UNSIGNED NOT NULL DEFAULT '0',
+  `ID` INT(11) NOT NULL DEFAULT '0',
+  `SID` INT(11) DEFAULT NULL,
+  `website_name` VARCHAR(255) DEFAULT NULL,
+  `CS` INT(1) DEFAULT NULL,
+  `last_responsetime` DECIMAL(10,0) DEFAULT NULL,
+  `last_check` DATETIME DEFAULT NULL,
+  `code_collect` INT(1) DEFAULT NULL,
+  `code_compair` INT(11) DEFAULT NULL,
+  `code_wordphrase` INT(11) DEFAULT NULL,
+  `code_wordphrase_oper` VARCHAR(2) DEFAULT NULL,
+  `code_wordphrase_txt` TEXT,
+  `use_auth` INT(11) DEFAULT NULL,
+  `auth_ntlm` INT(11) DEFAULT NULL,
+  `auth_uid` VARCHAR(45) DEFAULT NULL,
+  `auth_pwd` VARCHAR(45) DEFAULT NULL,
+  `auth_domain` VARCHAR(45) DEFAULT NULL,
+  `webenabled` INT(11) DEFAULT NULL,
+  `sid_is_host` INT(11) DEFAULT NULL,
+  `CurrentStatus` VARCHAR(13) DEFAULT NULL
+) ENGINE=INNODB DEFAULT CHARSET=latin1;
 
 /*Table structure for table `web_view_collector_list` */
 
@@ -520,14 +585,14 @@ DROP TABLE IF EXISTS `web_view_collector_list`;
 DROP VIEW IF EXISTS `web_view_collector_list`;
 
 CREATE TABLE `web_view_collector_list` (
-  `ID` int(4) NOT NULL DEFAULT '0',
-  `IsBalanced` int(4) DEFAULT '1',
-  `ServerName` varchar(255) DEFAULT NULL,
-  `Status` varchar(8) DEFAULT NULL,
-  `Balanced` varchar(3) DEFAULT NULL,
-  `LUD` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
-  `CL` bigint(21) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `ID` INT(4) NOT NULL DEFAULT '0',
+  `IsBalanced` INT(4) DEFAULT '1',
+  `ServerName` VARCHAR(255) DEFAULT NULL,
+  `Status` VARCHAR(8) DEFAULT NULL,
+  `Balanced` VARCHAR(3) DEFAULT NULL,
+  `LUD` TIMESTAMP NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `CL` BIGINT(21) DEFAULT NULL
+) ENGINE=INNODB DEFAULT CHARSET=latin1;
 
 /*Table structure for table `web_view_servers_all` */
 
@@ -536,21 +601,21 @@ DROP TABLE IF EXISTS `web_view_servers_all`;
 DROP VIEW IF EXISTS `web_view_servers_all`;
 
 CREATE TABLE `web_view_servers_all` (
-  `ID` int(10) unsigned NOT NULL DEFAULT '0',
-  `ServerName` varchar(255) CHARACTER SET utf8 NOT NULL DEFAULT '',
-  `ServerIPAddress` varchar(255) NOT NULL,
-  `CS` varchar(36) DEFAULT NULL,
-  `DisplayName` varchar(45) NOT NULL,
-  `IsEnabled` int(10) unsigned NOT NULL DEFAULT '0',
-  `DTAdded` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
-  `CID` int(10) DEFAULT NULL COMMENT 'Collector ID, 0=All',
-  `DoPing` int(10) DEFAULT NULL,
-  `DoTrace` int(10) DEFAULT NULL,
-  `DoPort` int(10) DEFAULT NULL,
-  `DoHTTP` int(10) DEFAULT NULL,
-  `cat` varchar(255) NOT NULL,
-  `PingRepeats` int(10) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `ID` INT(10) UNSIGNED NOT NULL DEFAULT '0',
+  `ServerName` VARCHAR(255) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `ServerIPAddress` VARCHAR(255) NOT NULL,
+  `CS` VARCHAR(36) DEFAULT NULL,
+  `DisplayName` VARCHAR(45) NOT NULL,
+  `IsEnabled` INT(10) UNSIGNED NOT NULL DEFAULT '0',
+  `DTAdded` TIMESTAMP NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `CID` INT(10) DEFAULT NULL COMMENT 'Collector ID, 0=All',
+  `DoPing` INT(10) DEFAULT NULL,
+  `DoTrace` INT(10) DEFAULT NULL,
+  `DoPort` INT(10) DEFAULT NULL,
+  `DoHTTP` INT(10) DEFAULT NULL,
+  `cat` VARCHAR(255) NOT NULL,
+  `PingRepeats` INT(10) DEFAULT NULL
+) ENGINE=INNODB DEFAULT CHARSET=latin1;
 
 /*Table structure for table `web_view_servers_disabled` */
 
@@ -559,20 +624,20 @@ DROP TABLE IF EXISTS `web_view_servers_disabled`;
 DROP VIEW IF EXISTS `web_view_servers_disabled`;
 
 CREATE TABLE `web_view_servers_disabled` (
-  `ID` int(10) unsigned NOT NULL DEFAULT '0',
-  `ServerName` varchar(255) CHARACTER SET utf8 NOT NULL DEFAULT '',
-  `ServerIPAddress` varchar(255) NOT NULL,
-  `CS` varchar(36) DEFAULT NULL,
-  `DisplayName` varchar(45) NOT NULL,
-  `IsEnabled` int(10) unsigned NOT NULL DEFAULT '0',
-  `DTAdded` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
-  `CID` int(10) DEFAULT NULL COMMENT 'Collector ID, 0=All',
-  `DoPing` int(10) DEFAULT NULL,
-  `DoTrace` int(10) DEFAULT NULL,
-  `DoPort` int(10) DEFAULT NULL,
-  `DoHTTP` int(10) DEFAULT NULL,
-  `cat` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `ID` INT(10) UNSIGNED NOT NULL DEFAULT '0',
+  `ServerName` VARCHAR(255) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `ServerIPAddress` VARCHAR(255) NOT NULL,
+  `CS` VARCHAR(36) DEFAULT NULL,
+  `DisplayName` VARCHAR(45) NOT NULL,
+  `IsEnabled` INT(10) UNSIGNED NOT NULL DEFAULT '0',
+  `DTAdded` TIMESTAMP NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `CID` INT(10) DEFAULT NULL COMMENT 'Collector ID, 0=All',
+  `DoPing` INT(10) DEFAULT NULL,
+  `DoTrace` INT(10) DEFAULT NULL,
+  `DoPort` INT(10) DEFAULT NULL,
+  `DoHTTP` INT(10) DEFAULT NULL,
+  `cat` VARCHAR(255) NOT NULL
+) ENGINE=INNODB DEFAULT CHARSET=latin1;
 
 /*Table structure for table `web_view_servers_downonly` */
 
@@ -581,20 +646,20 @@ DROP TABLE IF EXISTS `web_view_servers_downonly`;
 DROP VIEW IF EXISTS `web_view_servers_downonly`;
 
 CREATE TABLE `web_view_servers_downonly` (
-  `ID` int(10) unsigned NOT NULL DEFAULT '0',
-  `ServerName` varchar(255) CHARACTER SET utf8 NOT NULL DEFAULT '',
-  `ServerIPAddress` varchar(255) NOT NULL,
-  `CS` varchar(36) DEFAULT NULL,
-  `DisplayName` varchar(45) NOT NULL,
-  `IsEnabled` int(10) unsigned NOT NULL DEFAULT '0',
-  `DTAdded` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
-  `CID` int(10) DEFAULT NULL COMMENT 'Collector ID, 0=All',
-  `DoPing` int(10) DEFAULT NULL,
-  `DoTrace` int(10) DEFAULT NULL,
-  `DoPort` int(10) DEFAULT NULL,
-  `DoHTTP` int(10) DEFAULT NULL,
-  `cat` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `ID` INT(10) UNSIGNED NOT NULL DEFAULT '0',
+  `ServerName` VARCHAR(255) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `ServerIPAddress` VARCHAR(255) NOT NULL,
+  `CS` VARCHAR(36) DEFAULT NULL,
+  `DisplayName` VARCHAR(45) NOT NULL,
+  `IsEnabled` INT(10) UNSIGNED NOT NULL DEFAULT '0',
+  `DTAdded` TIMESTAMP NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `CID` INT(10) DEFAULT NULL COMMENT 'Collector ID, 0=All',
+  `DoPing` INT(10) DEFAULT NULL,
+  `DoTrace` INT(10) DEFAULT NULL,
+  `DoPort` INT(10) DEFAULT NULL,
+  `DoHTTP` INT(10) DEFAULT NULL,
+  `cat` VARCHAR(255) NOT NULL
+) ENGINE=INNODB DEFAULT CHARSET=latin1;
 
 /*Table structure for table `web_view_servers_errorsonly` */
 
@@ -603,21 +668,21 @@ DROP TABLE IF EXISTS `web_view_servers_errorsonly`;
 DROP VIEW IF EXISTS `web_view_servers_errorsonly`;
 
 CREATE TABLE `web_view_servers_errorsonly` (
-  `ID` int(10) unsigned NOT NULL DEFAULT '0',
-  `ServerName` varchar(255) CHARACTER SET utf8 NOT NULL DEFAULT '',
-  `ServerIPAddress` varchar(255) NOT NULL,
-  `CSText` varchar(10) DEFAULT NULL,
-  `CS` varchar(36) DEFAULT NULL,
-  `DisplayName` varchar(45) NOT NULL,
-  `IsEnabled` int(10) unsigned NOT NULL DEFAULT '0',
-  `DTAdded` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
-  `CID` int(10) DEFAULT NULL COMMENT 'Collector ID, 0=All',
-  `DoPing` int(10) DEFAULT NULL,
-  `DoTrace` int(10) DEFAULT NULL,
-  `DoPort` int(10) DEFAULT NULL,
-  `DoHTTP` int(10) DEFAULT NULL,
-  `cat` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `ID` INT(10) UNSIGNED NOT NULL DEFAULT '0',
+  `ServerName` VARCHAR(255) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `ServerIPAddress` VARCHAR(255) NOT NULL,
+  `CSText` VARCHAR(10) DEFAULT NULL,
+  `CS` VARCHAR(36) DEFAULT NULL,
+  `DisplayName` VARCHAR(45) NOT NULL,
+  `IsEnabled` INT(10) UNSIGNED NOT NULL DEFAULT '0',
+  `DTAdded` TIMESTAMP NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `CID` INT(10) DEFAULT NULL COMMENT 'Collector ID, 0=All',
+  `DoPing` INT(10) DEFAULT NULL,
+  `DoTrace` INT(10) DEFAULT NULL,
+  `DoPort` INT(10) DEFAULT NULL,
+  `DoHTTP` INT(10) DEFAULT NULL,
+  `cat` VARCHAR(255) NOT NULL
+) ENGINE=INNODB DEFAULT CHARSET=latin1;
 
 /*Table structure for table `web_view_servers_ports` */
 
@@ -626,15 +691,15 @@ DROP TABLE IF EXISTS `web_view_servers_ports`;
 DROP VIEW IF EXISTS `web_view_servers_ports`;
 
 CREATE TABLE `web_view_servers_ports` (
-  `ID` int(10) NOT NULL DEFAULT '0',
-  `SID` int(10) DEFAULT NULL COMMENT 'Machine ID',
-  `Port` int(10) DEFAULT NULL COMMENT 'Port Number',
-  `protocol` varchar(255) DEFAULT NULL COMMENT 'tcp/udp',
-  `IsEnabled` int(4) DEFAULT NULL COMMENT 'Monitoring Enabled',
-  `IsMonitored` varchar(3) DEFAULT NULL,
-  `CS` int(4) DEFAULT NULL COMMENT 'Current Status',
-  `CurrentStatus` varchar(4) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `ID` INT(10) NOT NULL DEFAULT '0',
+  `SID` INT(10) DEFAULT NULL COMMENT 'Machine ID',
+  `Port` INT(10) DEFAULT NULL COMMENT 'Port Number',
+  `protocol` VARCHAR(255) DEFAULT NULL COMMENT 'tcp/udp',
+  `IsEnabled` INT(4) DEFAULT NULL COMMENT 'Monitoring Enabled',
+  `IsMonitored` VARCHAR(3) DEFAULT NULL,
+  `CS` INT(4) DEFAULT NULL COMMENT 'Current Status',
+  `CurrentStatus` VARCHAR(4) DEFAULT NULL
+) ENGINE=INNODB DEFAULT CHARSET=latin1;
 
 /*Table structure for table `web_view_servers_uponly` */
 
@@ -643,20 +708,76 @@ DROP TABLE IF EXISTS `web_view_servers_uponly`;
 DROP VIEW IF EXISTS `web_view_servers_uponly`;
 
 CREATE TABLE `web_view_servers_uponly` (
-  `ID` int(10) unsigned NOT NULL DEFAULT '0',
-  `ServerName` varchar(255) CHARACTER SET utf8 NOT NULL DEFAULT '',
-  `ServerIPAddress` varchar(255) NOT NULL,
-  `CS` varchar(36) DEFAULT NULL,
-  `DisplayName` varchar(45) NOT NULL,
-  `IsEnabled` int(10) unsigned NOT NULL DEFAULT '0',
-  `DTAdded` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
-  `CID` int(10) DEFAULT NULL COMMENT 'Collector ID, 0=All',
-  `DoPing` int(10) DEFAULT NULL,
-  `DoTrace` int(10) DEFAULT NULL,
-  `DoPort` int(10) DEFAULT NULL,
-  `DoHTTP` int(10) DEFAULT NULL,
-  `cat` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `ID` INT(10) UNSIGNED NOT NULL DEFAULT '0',
+  `ServerName` VARCHAR(255) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `ServerIPAddress` VARCHAR(255) NOT NULL,
+  `CS` VARCHAR(36) DEFAULT NULL,
+  `DisplayName` VARCHAR(45) NOT NULL,
+  `IsEnabled` INT(10) UNSIGNED NOT NULL DEFAULT '0',
+  `DTAdded` TIMESTAMP NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `CID` INT(10) DEFAULT NULL COMMENT 'Collector ID, 0=All',
+  `DoPing` INT(10) DEFAULT NULL,
+  `DoTrace` INT(10) DEFAULT NULL,
+  `DoPort` INT(10) DEFAULT NULL,
+  `DoHTTP` INT(10) DEFAULT NULL,
+  `cat` VARCHAR(255) NOT NULL
+) ENGINE=INNODB DEFAULT CHARSET=latin1;
+
+/*Table structure for table `website_check_results` */
+
+DROP TABLE IF EXISTS `website_check_results`;
+
+CREATE TABLE `website_check_results` (
+  `ID` INT(11) NOT NULL AUTO_INCREMENT,
+  `SID` INT(11) DEFAULT NULL,
+  `WID` INT(11) DEFAULT NULL,
+  `DTID` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP,
+  `ls` INT(11) DEFAULT NULL,
+  `responsetime` VARCHAR(45) DEFAULT NULL,
+  `error_msg` TEXT,
+  `code_match` INT(11) DEFAULT '1',
+  `word_match` INT(11) DEFAULT '1',
+  PRIMARY KEY (`ID`)
+) ENGINE=INNODB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
+
+/*Table structure for table `website_code` */
+
+DROP TABLE IF EXISTS `website_code`;
+
+CREATE TABLE `website_code` (
+  `ID` INT(11) NOT NULL AUTO_INCREMENT,
+  `WID` INT(11) DEFAULT NULL,
+  `site_code` TEXT,
+  `site_code_lup` DATETIME DEFAULT NULL,
+  `dtins` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`ID`)
+) ENGINE=INNODB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+
+/*Table structure for table `website_list` */
+
+DROP TABLE IF EXISTS `website_list`;
+
+CREATE TABLE `website_list` (
+  `ID` INT(11) NOT NULL AUTO_INCREMENT,
+  `SID` INT(11) DEFAULT NULL,
+  `website_name` VARCHAR(255) DEFAULT NULL,
+  `CS` INT(1) DEFAULT NULL,
+  `sid_is_host` INT(11) DEFAULT '1',
+  `last_responsetime` DECIMAL(10,0) DEFAULT NULL,
+  `last_check` DATETIME DEFAULT NULL,
+  `code_collect` INT(1) DEFAULT '1',
+  `code_compair` INT(11) DEFAULT '0',
+  `code_wordphrase` INT(11) DEFAULT '0',
+  `code_wordphrase_oper` VARCHAR(2) DEFAULT '=',
+  `code_wordphrase_txt` TEXT,
+  `use_auth` INT(11) DEFAULT '0',
+  `auth_ntlm` INT(11) DEFAULT '0',
+  `auth_uid` VARCHAR(45) DEFAULT NULL,
+  `auth_pwd` VARCHAR(45) DEFAULT NULL,
+  `auth_domain` VARCHAR(45) DEFAULT NULL,
+  `isenabled` INT(11) DEFAULT '1',
+  PRIMARY KEY (`ID`)
+) ENGINE=INNODB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1 ROW_FORMAT=DYNAMIC;
 
 /*View structure for view view_active_port_list */
 
@@ -664,7 +785,7 @@ DROP VIEW IF EXISTS `view_active_port_list`;
 
 DROP TABLE IF EXISTS `view_active_port_list`;
 
-CREATE ALGORITHM=UNDEFINED DEFINER=`bssm`@`%` SQL SECURITY DEFINER VIEW `view_active_port_list` AS (select `ls`.`ID` AS `id`,`ls`.`ServerName` AS `ServerName`,`ls`.`ServerIPAddress` AS `ServerIPAddress`,`ls`.`DisplayName` AS `DisplayName`,`p`.`ID` AS `PortID`,`p`.`Port` AS `port`,`p`.`protocol` AS `protocol`,`p`.`IsEnabled` AS `isEnabled`,`p`.`CS` AS `CS`,`p`.`r_app_name` AS `r_app_name` from (`list_servers` `ls` join `list_servers_ports` `p` on((`p`.`SID` = `ls`.`ID`))) where ((`ls`.`IsEnabled` = 1) and (`ls`.`DoPort` = 1) and (`ls`.`CS` = 1) and (`p`.`IsEnabled` = 1)) order by `ls`.`ServerName`);
+CREATE ALGORITHM=UNDEFINED DEFINER=`bssm`@`%` SQL SECURITY DEFINER VIEW `view_active_port_list` AS (SELECT `ls`.`ID` AS `id`,`ls`.`ServerName` AS `ServerName`,`ls`.`ServerIPAddress` AS `ServerIPAddress`,`ls`.`DisplayName` AS `DisplayName`,`p`.`ID` AS `PortID`,`p`.`Port` AS `port`,`p`.`protocol` AS `protocol`,`p`.`IsEnabled` AS `isEnabled`,`p`.`CS` AS `CS`,`p`.`r_app_name` AS `r_app_name` FROM (`list_servers` `ls` JOIN `list_servers_ports` `p` ON((`p`.`SID` = `ls`.`ID`))) WHERE ((`ls`.`IsEnabled` = 1) AND (`ls`.`DoPort` = 1) AND (`ls`.`CS` = 1) AND (`p`.`IsEnabled` = 1)) ORDER BY `ls`.`ServerName`);
 
 /*View structure for view view_collector_list */
 
@@ -672,7 +793,7 @@ DROP VIEW IF EXISTS `view_collector_list`;
 
 DROP TABLE IF EXISTS `view_collector_list`;
 
-CREATE ALGORITHM=UNDEFINED DEFINER=`bssm`@`%` SQL SECURITY DEFINER VIEW `view_collector_list` AS (select `list_collectors`.`ID` AS `ID`,`list_collectors`.`IsBalanced` AS `IsBalanced`,`list_collectors`.`ServerName` AS `ServerName`,(case `list_collectors`.`IsEnabled` when 0 then _latin1'Disabled' when 1 then _latin1'Enabled' end) AS `Status`,(case `list_collectors`.`IsBalanced` when 0 then _latin1'No' when 1 then _latin1'Yes' end) AS `Balanced`,`list_collectors`.`LUD` AS `LUD`,(select count(0) AS `Count(*)` from `list_servers` `ls` where ((`ls`.`CID` = `list_collectors`.`ID`) and (`ls`.`CS` <> 5))) AS `CL` from `list_collectors`);
+CREATE ALGORITHM=UNDEFINED DEFINER=`bssm`@`%` SQL SECURITY DEFINER VIEW `view_collector_list` AS (SELECT `list_collectors`.`ID` AS `ID`,`list_collectors`.`IsBalanced` AS `IsBalanced`,`list_collectors`.`ServerName` AS `ServerName`,(CASE `list_collectors`.`IsEnabled` WHEN 0 THEN _latin1'Disabled' WHEN 1 THEN _latin1'Enabled' END) AS `Status`,(CASE `list_collectors`.`IsBalanced` WHEN 0 THEN _latin1'No' WHEN 1 THEN _latin1'Yes' END) AS `Balanced`,`list_collectors`.`LUD` AS `LUD`,(SELECT COUNT(0) AS `Count(*)` FROM `list_servers` `ls` WHERE ((`ls`.`CID` = `list_collectors`.`ID`) AND (`ls`.`CS` <> 5))) AS `CL` FROM `list_collectors`);
 
 /*View structure for view view_monthly_gen_friendlydates */
 
@@ -680,7 +801,7 @@ DROP VIEW IF EXISTS `view_monthly_gen_friendlydates`;
 
 DROP TABLE IF EXISTS `view_monthly_gen_friendlydates`;
 
-CREATE ALGORITHM=UNDEFINED DEFINER=`bssm`@`%` SQL SECURITY DEFINER VIEW `view_monthly_gen_friendlydates` AS select `uptime_stats_monthly_general`.`id` AS `id`,`uptime_stats_monthly_general`.`dt_m` AS `dt_m`,`uptime_stats_monthly_general`.`dt_y` AS `dt_y`,`uptime_stats_monthly_general`.`t_uptime` AS `t_uptime`,date_format(concat(`uptime_stats_monthly_general`.`dt_y`,'-',`uptime_stats_monthly_general`.`dt_m`,'-01'),'%M %Y') AS `dt`,`uptime_stats_monthly_general`.`dtins` AS `dtins`,cast(concat((100 - `uptime_stats_monthly_general`.`t_uptime`)) as decimal(3,3)) AS `t_downtime` from `uptime_stats_monthly_general` order by `uptime_stats_monthly_general`.`dtins` desc limit 0,6;
+CREATE ALGORITHM=UNDEFINED DEFINER=`bssm`@`%` SQL SECURITY DEFINER VIEW `view_monthly_gen_friendlydates` AS SELECT `uptime_stats_monthly_general`.`id` AS `id`,`uptime_stats_monthly_general`.`dt_m` AS `dt_m`,`uptime_stats_monthly_general`.`dt_y` AS `dt_y`,`uptime_stats_monthly_general`.`t_uptime` AS `t_uptime`,DATE_FORMAT(CONCAT(`uptime_stats_monthly_general`.`dt_y`,'-',`uptime_stats_monthly_general`.`dt_m`,'-01'),'%M %Y') AS `dt`,`uptime_stats_monthly_general`.`dtins` AS `dtins`,CAST(CONCAT((100 - `uptime_stats_monthly_general`.`t_uptime`)) AS DECIMAL(3,3)) AS `t_downtime` FROM `uptime_stats_monthly_general` ORDER BY `uptime_stats_monthly_general`.`dtins` DESC LIMIT 0,6;
 
 /*View structure for view view_ping_timepingstats */
 
@@ -688,7 +809,7 @@ DROP VIEW IF EXISTS `view_ping_timepingstats`;
 
 DROP TABLE IF EXISTS `view_ping_timepingstats`;
 
-CREATE ALGORITHM=UNDEFINED DEFINER=`bssm`@`%` SQL SECURITY DEFINER VIEW `view_ping_timepingstats` AS (select `results_timestamp`.`ID` AS `ID`,`results_timestamp`.`SID` AS `SID`,`results_timestamp`.`DTID` AS `DTID`,`results_timestamp`.`ls` AS `ls`,`results_ping_stats`.`Packets_Sent` AS `Packets_Sent`,`results_ping_stats`.`Packets_Rec` AS `Packets_Rec`,`results_ping_stats`.`Packets_Lost` AS `Packets_Lost`,`results_ping_stats`.`RoundTrip_Min` AS `RoundTrip_Min`,`results_ping_stats`.`RoundTrip_Max` AS `RoundTrip_Max`,`results_ping_stats`.`RoundTrip_Avg` AS `RoundTrip_Avg`,`results_ping_stats`.`uptime` AS `uptime` from (`results_timestamp` join `results_ping_stats` on((`results_timestamp`.`ID` = `results_ping_stats`.`TSID`))) order by `results_timestamp`.`DTID` desc);
+CREATE ALGORITHM=UNDEFINED DEFINER=`bssm`@`%` SQL SECURITY DEFINER VIEW `view_ping_timepingstats` AS (SELECT `results_timestamp`.`ID` AS `ID`,`results_timestamp`.`SID` AS `SID`,`results_timestamp`.`DTID` AS `DTID`,`results_timestamp`.`ls` AS `ls`,`results_ping_stats`.`Packets_Sent` AS `Packets_Sent`,`results_ping_stats`.`Packets_Rec` AS `Packets_Rec`,`results_ping_stats`.`Packets_Lost` AS `Packets_Lost`,`results_ping_stats`.`RoundTrip_Min` AS `RoundTrip_Min`,`results_ping_stats`.`RoundTrip_Max` AS `RoundTrip_Max`,`results_ping_stats`.`RoundTrip_Avg` AS `RoundTrip_Avg`,`results_ping_stats`.`uptime` AS `uptime` FROM (`results_timestamp` JOIN `results_ping_stats` ON((`results_timestamp`.`ID` = `results_ping_stats`.`TSID`))) ORDER BY `results_timestamp`.`DTID` DESC);
 
 /*View structure for view view_port_to_server_appname */
 
@@ -696,7 +817,7 @@ DROP VIEW IF EXISTS `view_port_to_server_appname`;
 
 DROP TABLE IF EXISTS `view_port_to_server_appname`;
 
-CREATE ALGORITHM=UNDEFINED DEFINER=`bssm`@`%` SQL SECURITY DEFINER VIEW `view_port_to_server_appname` AS (select `lsp`.`ID` AS `ID`,`lsp`.`SID` AS `SID`,`ls`.`DisplayName` AS `DisplayName`,`ls`.`ServerName` AS `Servername`,`ls`.`ServerIPAddress` AS `ServerIPAddress`,`lsp`.`Port` AS `Port`,`lsp`.`protocol` AS `protocol`,`pl`.`AppName_C` AS `AppName_C`,`pl`.`AppName_R` AS `AppName_R`,`lsp`.`IsEnabled` AS `IsEnabled`,`lsp`.`CS` AS `CS` from ((`list_servers_ports` `lsp` join `list_servers` `ls` on((`ls`.`ID` = `lsp`.`SID`))) join `port_listings` `pl` on((`pl`.`port` = `lsp`.`Port`))));
+CREATE ALGORITHM=UNDEFINED DEFINER=`bssm`@`%` SQL SECURITY DEFINER VIEW `view_port_to_server_appname` AS (SELECT `lsp`.`ID` AS `ID`,`lsp`.`SID` AS `SID`,`ls`.`DisplayName` AS `DisplayName`,`ls`.`ServerName` AS `Servername`,`ls`.`ServerIPAddress` AS `ServerIPAddress`,`lsp`.`Port` AS `Port`,`lsp`.`protocol` AS `protocol`,`pl`.`AppName_C` AS `AppName_C`,`pl`.`AppName_R` AS `AppName_R`,`lsp`.`IsEnabled` AS `IsEnabled`,`lsp`.`CS` AS `CS` FROM ((`list_servers_ports` `lsp` JOIN `list_servers` `ls` ON((`ls`.`ID` = `lsp`.`SID`))) JOIN `port_listings` `pl` ON((`pl`.`port` = `lsp`.`Port`))));
 
 /*View structure for view view_servers_all */
 
@@ -728,7 +849,7 @@ DROP VIEW IF EXISTS `view_servers_errorsonly`;
 
 DROP TABLE IF EXISTS `view_servers_errorsonly`;
 
-CREATE ALGORITHM=UNDEFINED DEFINER=`bssm`@`%` SQL SECURITY DEFINER VIEW `view_servers_errorsonly` AS (select `list_servers`.`ID` AS `ID`,`list_servers`.`ServerName` AS `ServerName`,`list_servers`.`ServerIPAddress` AS `ServerIPAddress`,(case `list_servers`.`CS` when 0 then _latin1'Down' when 1 then _latin1'Up' when 2 then _latin1'IP Changed' when 3 then _latin1'Disabled' when 4 then _latin1'Slow' when 5 then _latin1'Deleted' end) AS `CS`,`list_servers`.`DisplayName` AS `DisplayName`,(case `list_servers`.`IsEnabled` when 0 then _latin1'Disabled' when 1 then _latin1'Enabled' end) AS `IsEnabled`,`list_servers`.`DTAdded` AS `DTAdded`,`list_servers`.`CID` AS `CID`,`list_servers`.`DoPing` AS `DoPing`,`list_servers`.`DoTrace` AS `DoTrace`,`list_servers`.`DoPort` AS `DoPort`,`list_servers`.`DoHTTP` AS `DoHTTP`,`list_servers_types`.`Cat` AS `Cat` from (`list_servers` join `list_servers_types` on((`list_servers`.`TID` = `list_servers_types`.`ID`))) where ((`list_servers`.`CS` <> 1) and (`list_servers`.`IsEnabled` = 1)) order by `list_servers`.`ServerName`);
+CREATE ALGORITHM=UNDEFINED DEFINER=`bssm`@`%` SQL SECURITY DEFINER VIEW `view_servers_errorsonly` AS (select `list_servers`.`ID` AS `ID`,`list_servers`.`ServerName` AS `ServerName`,`list_servers`.`ServerIPAddress` AS `ServerIPAddress`,(case `list_servers`.`CS` when 0 then _latin1'Down' when 1 then _latin1'Up' when 2 then _latin1'IP Changed' when 3 then _latin1'Disabled' when 4 then _latin1'Slow' when 5 then _latin1'Deleted' when 6 then _latin1'Port Down' when 7 then _latin1'WebSite Down' when 8 then _latin1'Web Search Failed' when 9 then _latin1'Web Code Failed' when 10 then _latin1'Web Tests Failed' end) AS `CS`,`list_servers`.`DisplayName` AS `DisplayName`,(case `list_servers`.`IsEnabled` when 0 then _latin1'Disabled' when 1 then _latin1'Enabled' end) AS `IsEnabled`,`list_servers`.`DTAdded` AS `DTAdded`,`list_servers`.`CID` AS `CID`,`list_servers`.`DoPing` AS `DoPing`,`list_servers`.`DoTrace` AS `DoTrace`,`list_servers`.`DoPort` AS `DoPort`,`list_servers`.`DoHTTP` AS `DoHTTP`,`list_servers_types`.`Cat` AS `Cat` from (`list_servers` join `list_servers_types` on((`list_servers`.`TID` = `list_servers_types`.`ID`))) where ((`list_servers`.`CS` <> 1) and (`list_servers`.`IsEnabled` = 1)) order by `list_servers`.`ServerName`);
 
 /*View structure for view view_servers_uponly */
 
@@ -737,6 +858,14 @@ DROP VIEW IF EXISTS `view_servers_uponly`;
 DROP TABLE IF EXISTS `view_servers_uponly`;
 
 CREATE ALGORITHM=UNDEFINED DEFINER=`bssm`@`%` SQL SECURITY DEFINER VIEW `view_servers_uponly` AS (select `list_servers`.`ID` AS `ID`,`list_servers`.`ServerName` AS `ServerName`,`list_servers`.`ServerIPAddress` AS `ServerIPAddress`,`list_servers`.`CS` AS `CS`,`list_servers`.`DisplayName` AS `DisplayName`,`list_servers`.`IsEnabled` AS `IsEnabled`,`list_servers`.`DTAdded` AS `DTAdded`,`list_servers`.`CID` AS `CID`,`list_servers`.`DoPing` AS `DoPing`,`list_servers`.`DoTrace` AS `DoTrace`,`list_servers`.`DoPort` AS `DoPort`,`list_servers`.`DoHTTP` AS `DoHTTP`,`list_servers_types`.`Cat` AS `Cat` from (`list_servers` join `list_servers_types` on((`list_servers`.`TID` = `list_servers_types`.`ID`))) where ((`list_servers`.`CS` = 1) and (`list_servers`.`IsEnabled` = 1)) order by `list_servers`.`ServerName`);
+
+/*View structure for view view_website_list_all */
+
+DROP VIEW IF EXISTS `view_website_list_all`;
+
+DROP TABLE IF EXISTS `view_website_list_all`;
+
+CREATE ALGORITHM=UNDEFINED DEFINER=`bssm`@`%` SQL SECURITY DEFINER VIEW `view_website_list_all` AS (select `ls`.`DisplayName` AS `DisplayName`,`ls`.`CS` AS `DeviceStatus`,`ls`.`CID` AS `CID`,`ls`.`IsEnabled` AS `DeviceEnabled`,`wl`.`ID` AS `ID`,`wl`.`SID` AS `SID`,`wl`.`website_name` AS `website_name`,`wl`.`CS` AS `CS`,`wl`.`last_responsetime` AS `last_responsetime`,`wl`.`last_check` AS `last_check`,`wl`.`code_collect` AS `code_collect`,`wl`.`code_compair` AS `code_compair`,`wl`.`code_wordphrase` AS `code_wordphrase`,`wl`.`code_wordphrase_oper` AS `code_wordphrase_oper`,`wl`.`code_wordphrase_txt` AS `code_wordphrase_txt`,`wl`.`use_auth` AS `use_auth`,`wl`.`auth_ntlm` AS `auth_ntlm`,`wl`.`auth_uid` AS `auth_uid`,`wl`.`auth_pwd` AS `auth_pwd`,`wl`.`auth_domain` AS `auth_domain`,`wl`.`isenabled` AS `webenabled`,`wl`.`sid_is_host` AS `sid_is_host`,(case `wl`.`CS` when 0 then _latin1'Down' when 1 then _latin1'Up' when 2 then _latin1'Code Changed' when 3 then _latin1'Disabled' when 4 then _latin1'Slow' when 5 then _latin1'Deleted' when 6 then _latin1'Phrase Failed' when 7 then _latin1'Host Down' end) AS `CurrentStatus` from (`list_servers` `ls` join `website_list` `wl` on((`wl`.`SID` = `ls`.`ID`))) where (`ls`.`DoHTTP` = 1));
 
 /*View structure for view web_view_collector_list */
 
@@ -853,19 +982,32 @@ drop procedure if exists `sp_mnt_rawpingdata_day`;
 DELIMITER $$
 
 CREATE DEFINER=`bssm`@`%` PROCEDURE `sp_mnt_rawpingdata_day`()
-BEGIN
-  DECLARE done INT DEFAULT 0;
-	Declare ReqID int;
-	DECLARE RID CURSOR FOR select ID from view_ping_timepingstats where DTID < adddate(CURRENT_TIMESTAMP, INTERVAL -iDay DAY);
-	DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = 1;
-	Open RID;
-	REPEAT
-		FETCH RID INTO ReqID;
-		IF NOT done THEN
-			delete from results_ping_raw where TSID=ReqID;
-		END IF;
-	UNTIL done END REPEAT;
-	Close RID;
+BEGIN
+
+  DECLARE done INT DEFAULT 0;
+
+	Declare ReqID int;
+
+	DECLARE RID CURSOR FOR select ID from view_ping_timepingstats where DTID < adddate(CURRENT_TIMESTAMP, INTERVAL -iDay DAY);
+
+	DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = 1;
+
+	Open RID;
+
+	REPEAT
+
+		FETCH RID INTO ReqID;
+
+		IF NOT done THEN
+
+			delete from results_ping_raw where TSID=ReqID;
+
+		END IF;
+
+	UNTIL done END REPEAT;
+
+	Close RID;
+
 END$$
 
 DELIMITER ;

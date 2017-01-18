@@ -16,6 +16,9 @@ Module modMain
     Public PID As Long
     Public Pids As String
     Public Throttle As Long
+    ''' <summary>
+    '''  Initializes the Global Variables from the AppSettings in the Config File
+    ''' </summary>
     Sub INIT()
         Dim ObjR As New BSRegistry
         CID = CLng(System.Configuration.ConfigurationManager.AppSettings("DataCollectorID"))
@@ -28,11 +31,19 @@ Module modMain
         MYCONNSTRING = ObjR.GetDBSettings
         ObjR = Nothing
     End Sub
+    ''' <summary>
+    ''' Main Startup of the Application
+    ''' </summary>
     Sub Main()
         Call INIT()
         Call DumpXML()
         Call ReadFile()
     End Sub
+    ''' <summary>
+    ''' Connects to the database and dumps the results in an XML File for off line reading.
+    ''' This was done just in case there was an issue while with the database while it was looping through the results
+    '''  This methos also frees up resources to the database since it's going to get hammered by the tester.
+    ''' </summary>
     Sub DumpXML()
         If ConnectDB() = 0 Then
             Dim SQL As String = "SELECT * from view_website_list_all where deviceenabled=1 and webenabled=1 and CID=" & CID & " order by displayname ASC"
@@ -55,6 +66,9 @@ Module modMain
             Call CatchError(sMsg, strForm & "." & strSubFunc)
         End If
     End Sub
+    ''' <summary>
+    ''' Reads the XML FIle and performs tasks as needed
+    ''' </summary>
     Sub ReadFile()
         On Error Resume Next
         Dim objOO As New BSOtherObjects
@@ -179,6 +193,9 @@ Module modMain
                 'Call CatchDebug("CID: " & CID, "modMain.ReadFIle")
                 'Call UpdateStatus()
     End Sub
+    ''' <summary>
+    ''' Runs the WebTest application with the parameters that is send from the Readfile
+    ''' </summary>
     Sub RunServer(ByVal sParm As String)
         Try
             Dim sMsg As String = " - DEBUG - "

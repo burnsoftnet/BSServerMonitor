@@ -1,1 +1,0 @@
-\\psf\Home\Documents\Visual Studio 2005\Projects\Production\BSServerMonitor\BSServerMonitor\bin\Debug\BSSM_WebManager.exe.config
