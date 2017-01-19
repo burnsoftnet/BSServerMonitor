@@ -4,3 +4,4 @@ THE FOLLOWING INFORMATION IS WHAT WAS ADDED AND CHANGED SINCE VERSION 1.5
 - Added Database Version Table, set to 1.5
 - Updated Table Schema, also in the sql statement, it will create the user and permissions needed, so to install the new database, all you would have to do is run the bssm_database_schema.sql script in MySQL under root or a user that can create users and databases.
 - Added the Hide Tab ability in the BSServerMonitor for Options that are not in use.
+- Added additonal commets
