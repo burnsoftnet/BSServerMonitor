@@ -9,19 +9,19 @@ The OSSM was created in Visual Basic.Net v2 using a MySQL Database as the backen
 
 I’m sure you are asking yourself “How was this created for a large scale environment?”.  Some of the other ping monitoring system originate from the main server that host the application, as this application can do on a small scale environment.  However, if you attempted to run the main application on the server with 1800 devices to ping every 15 minutes, this can cause performance issues on the application host. So to mitigate that issue we created the ability to deploy Collectors.  These Collectors can be on their own machine or an existing machine.  You add the Machine name in the main console, then install the software on that machine. After the installation you run the Configuration program to set the Collector ID, the Database Hostname, and what you want that collector to do ( ping every x minutes, run port & trace scans, Process scan results at a certain time, etc.).  If you have existing devices in the GUI that are on the main host, you can transfer them to a Collector.  If you have 4 collectors, you can set them to Load Balance in the GUI and when you add a server it will automatically add it to the collector with the least amount of clients.
   
-<center><img src="https://github.com/burnsoftnet/BSServerMonitor/blob/master/Docs/trace%20details.JPG?raw=true"></center>
+<img src="https://github.com/burnsoftnet/BSServerMonitor/blob/master/Docs/trace%20details.JPG?raw=true">
   
 What about if a collector died or was disconnected from the network?  That was also take into consideration as well.  The Main Server will check to see if the client has not reported back in x many minutes ( x being the number of minutes that the server starts it ping) times the number you set in configuration.  So lets say you have it set to ping every 15 minutes, and you set the configuration threshold to 3.  So the Collector fail alert will occur if it has not reported back in 45 minutes, ( 15 x 3) so after 45 minutes all the clients that where on that collector will be transferred the the master server, and the master server will start pinging those hosts.  Once you get the issues with that collector resolved and the “last update” field is updated, it will return those clients to the collector that they belong to.
 
 So it can load balance on a large scale, what makes this any different then the other pingers? Well, then you enter in the device DNS Name to ping, it will grab the IP Address for that DNS entry ( yes you can use the IP Address instead of the DNS Name ).  When the device is pinged it will ping the DNS name and compare the IP Address that is pulled back, if that IP Address is different then what is in the Database, it will throw an Warning alert stating that the IP Address has changed.  During the Ping cycle, a Device is pinged 10 times, if the ping if 3 or less of 10 ok, then it will send a Warning Alert saying that the device is slow.  If all 10 fail it will double check by pinging the IP Address, if that fails as well it will Throw an Error Alert.
   
-<center><img src="https://github.com/burnsoftnet/BSServerMonitor/blob/master/Docs/ipaddress%20changed.JPG?raw=true"></center>
+<img src="https://github.com/burnsoftnet/BSServerMonitor/blob/master/Docs/ipaddress%20changed.JPG?raw=true">
     
 Most of the ping results are kept for a day by default ( can be changed ), but most of the results are averaged out for a daily count, then monthly, and year counts for reporting.  in the GUI you are able to see the average result of uptime for daily and monthly.
-<center>
-<img src="https://github.com/burnsoftnet/BSServerMonitor/blob/master/Docs/daily%20uptime.JPG?raw=true"><br/>
+
+<img src="https://github.com/burnsoftnet/BSServerMonitor/blob/master/Docs/daily%20uptime.JPG?raw=true">
+
 <img scr="https://github.com/burnsoftnet/BSServerMonitor/blob/master/Docs/monthly%20uptime.JPG?raw=true">
-</center>
   
 The GUI Application comes in two versions, Master and Read-Only.  The Read-Only is like the master accept that you are not able to delete, disable or add anything, it’s mostly used to make people aware of issues, while the master allow you to administer the application.  A light read Only web console is also included in the source for those that do not want to install the flat clients.
 
