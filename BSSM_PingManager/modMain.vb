@@ -154,7 +154,7 @@ Module modMain
         Console.WriteLine("/id=<number>     - Sets the Data Collector ID in the Config file")
         Console.WriteLine("/version         - Displays Current Version")
         Console.WriteLine("/showappsettings - Show the settings for the config file")
-        Console.WriteLine("/mod             - Modify Settinss")
+        Console.WriteLine("/mod             - Modify Settings")
         Console.WriteLine("/key=Name        - App Setting Name use with /mod")
         Console.WriteLine("/value=NewValue  - New App Setting Value use with /mod")
         Console.WriteLine("/moddb           - Modify/add Database Settings")
