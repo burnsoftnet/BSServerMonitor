@@ -9,7 +9,7 @@ Public Class MyNewService
     Dim iInterval As Long
     Public RunOnFirstRun As Boolean
     Public myProcess As New Process
-    Shared Sub Main()
+    Public Sub Main()
         DO_DEBUG = CBool(System.Configuration.ConfigurationManager.AppSettings("DEBUG"))
         DO_HEALTH_CHECK = CBool(System.Configuration.ConfigurationManager.AppSettings("DO_HEALTH_CHECK"))
         Dim ServicestoRun() As System.ServiceProcess.ServiceBase

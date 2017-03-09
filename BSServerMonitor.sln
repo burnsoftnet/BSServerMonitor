@@ -63,6 +63,8 @@ Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "BSSM_WebTest", "BSSM_WebTes
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "BurnSoft.Universal", "BurnSoft.Universal\BurnSoft.Universal.vbproj", "{97BEB8C0-C7DD-4246-8E4A-48DAC0BA72C6}"
 EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "BSSM_WebUI", "BSSM_WebUI\BSSM_WebUI.vbproj", "{CA64B2E4-6C87-4D68-B295-12D446377619}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -139,6 +141,10 @@ Global
 		{97BEB8C0-C7DD-4246-8E4A-48DAC0BA72C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{97BEB8C0-C7DD-4246-8E4A-48DAC0BA72C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{97BEB8C0-C7DD-4246-8E4A-48DAC0BA72C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA64B2E4-6C87-4D68-B295-12D446377619}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA64B2E4-6C87-4D68-B295-12D446377619}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA64B2E4-6C87-4D68-B295-12D446377619}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA64B2E4-6C87-4D68-B295-12D446377619}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

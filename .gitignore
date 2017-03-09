@@ -63,3 +63,7 @@ BurnSoft.Universal/obj/Debug/*.*
 BSSM_WebManager/obj/Debug/*.*
 dbmaint/obj/Debug/*.*
 BSSM/obj/Debug/TempPE/*.*
+bsaddsrv/Resources/Thumbs.db
+BSServerMonitor/Resources/Thumbs.db
+BSSM_CollectorInstaller/Thumbs.db
+BSSMService/obj/Debug/TempPE/My Project.Resources.Designer.vb.dll
