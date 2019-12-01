@@ -26,3 +26,7 @@ Most of the ping results are kept for a day by default ( can be changed ), but m
 The GUI Application comes in two versions, Master and Read-Only.  The Read-Only is like the master accept that you are not able to delete, disable or add anything, it’s mostly used to make people aware of issues, while the master allow you to administer the application.  A light read Only web console is also included in the source for those that do not want to install the flat clients.
 
 There are still plans to grow the OSSM to give it the ability to perform and alert on port scans, smarter ping diagnostics, and even web page monitoring ( page up, content ok, etc ).  The OSSM has been tested and running in a large environment since 2009 with a max of 2000 devices across the world with 4 collectors and one master server.  So a lot of the theory that went into this application has been tested.  More to come later in the future and the source will still be available for everyone to see and modify to fit their own needs.
+
+<h1>Retired - Nov. 2019</h1>
+
+It was decided to retire this application in the meantime since there has not been any work on it in a few years and a lot of the features can be handled by PandoraFMS comunity edition.  This code will stil lbe available to anyone that still wishes to use it, but in the mean time, there will no be any additional code added to the project.
